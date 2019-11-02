@@ -10,3 +10,4 @@ bin
 !.gitignore
 !*.tex
 !*.sty
+!Docs_Important/*
