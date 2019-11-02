@@ -1,0 +1,28 @@
+\documentclass[../Documentation.tex]{subfiles}
+\begin{document}
+\section{Data}
+User Data that can be used for calculations, or for reference for various scenarios.
+\subsection{Overview}
+All classes (except \code{UserData.java} and \code{UserData\_Tools.java}) inherits any of the major \code{Struct} classes. As mentioned earlier, custom data validity methods can be employed to restrict what can be entered into the objects, as to prevent possible miscalculations.
+\dirtree{%
+.1 Struct.
+.2 SInt.
+.3 Resting\_BPM.
+.3 Steps.
+.3 Lifts (uses the Weight object).
+.4 Benches.
+.4 Deadlifts.
+.4 Squats.
+.2 SDouble.
+.3 Height.
+.3 Weight.
+.3 BF.
+.3 Activity\_Level.
+.2 SString.
+.3 Info.
+.3 Gender.
+}
+\code{UserData.java} defines all objects defined above under one file. \code{UserData\_Tools.java} provides a public interface to get and set data, which is used by the \code{Editor.java} and all the classes that inherit \code{Calc\_Abstract.java}.
+
+\code{Lifts.java} is a subclass of \code{SInt.java} that utilizes the \code{Weight.java} class as an object to define the weight of what is being lifted.
+\end{document}
