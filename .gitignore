@@ -6,8 +6,7 @@ test.java
 Old
 etc
 bin
-!*.pdf
+*.pdf
 !.gitignore
 !*.tex
 !*.sty
-Docs/*.pdf
