@@ -6,8 +6,8 @@ test.java
 Old
 etc
 bin
-!fitnessAppFlowDesign.pdf
-!Project_Proposal_Draft1_Updated_for_Demo2.pdf
+!*.pdf
 !.gitignore
 !*.tex
 !*.sty
+Docs/*.pdf
