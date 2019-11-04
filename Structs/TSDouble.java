@@ -25,7 +25,7 @@ abstract class TSDouble extends TStruct
 	protected boolean CC(Object) {
 		return false;
 	}
-	protected CT(Object o) {
+	protected boolean CT(Object o) {
 		return this.heap.SE(o);
 	}
 }
