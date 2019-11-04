@@ -9,7 +9,7 @@ abstract class TSString extends TStruct
 	public TSString(SString o, String Type, String Units) {
 		super(o, Type, Units);
 	}
-	public TSString(ArrayList<TStruct_Entry> a, String Type
+	public TSString(ArrayList<TStruct_Entry> a, String Type,
 			String Units) {
 		super(a, Type, Units);
 	}
@@ -22,10 +22,10 @@ abstract class TSString extends TStruct
 			return false;
 		}
 	}
-	protected boolean CC(Object) {
+	protected boolean CC(Object o) {
 		return false;
 	}
-	protected CT(Object o) {
+	protected boolean CT(Object o) {
 		return this.heap.SE(o);
 	}
 }

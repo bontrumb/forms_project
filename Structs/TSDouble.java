@@ -9,7 +9,7 @@ abstract class TSDouble extends TStruct
 	public TSDouble(SDouble o, String Type, String Units) {
 		super(o, Type, Units);
 	}
-	public TSDouble(ArrayList<TStruct_Entry> a, String Type
+	public TSDouble(ArrayList<TStruct_Entry> a, String Type,
 			String Units) {
 		super(a, Type, Units);
 	}
@@ -22,7 +22,7 @@ abstract class TSDouble extends TStruct
 			return false;
 		}
 	}
-	protected boolean CC(Object) {
+	protected boolean CC(Object o) {
 		return false;
 	}
 	protected boolean CT(Object o) {

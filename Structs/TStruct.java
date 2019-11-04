@@ -7,16 +7,20 @@ abstract class TStruct extends Struct
 	public TStruct(ArrayList<TStruct_Entry> a, String Type, String Units) {
 		super(a, Type, Units);
 	}
+	/*
 	public TStruct(Struct o, String Type, String Units) {
-		super(InitArray(), Type, Units);
+		super(Type, Units);
+		super.SetEntry(InitArray());
 		AddEntry(o);
 	}
+	*/
 	public TStruct(String Type, String Units) {
-		super(InitArray(), Type, Units);
+		super(Type, Units);
+		super.SetEntry(InitArray());
 	}
 	// get methods
 	public ArrayList<TStruct_Entry> GetArray() {
-		return super.GetEntry();
+		return (ArrayList<TStruct_Entry>) super.GetEntry();
 	}
 	//@Override # might not be needed....
 	public Struct GetEntry(int choice) {
@@ -26,10 +30,8 @@ abstract class TStruct extends Struct
 		return GetArray().get(choice).GetDate();
 	}
 	// add methods
-	protected void AddEntry(Struct a) {
-		TStruct_Entry ToAdd = new TStruct_Entry(a, 
-				GetType(), GetUnits());
-		GetArray().add(ToAdd);
+	protected void AddEntry(TStruct_Entry NewEntry) {
+		GetArray().add(NewEntry);
 	}
 	// init methods
 	private ArrayList<TStruct_Entry> InitArray() {
