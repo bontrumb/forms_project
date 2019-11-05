@@ -20,4 +20,8 @@ abstract class TLifts extends TSInt
 	protected void SetWeight(Object o) {
 		weight.SetEntry(o);
 	}
+	// set entries for lifts
+	public boolean AddEntry(Object o) {
+		return super.AE(o);
+	}
 }

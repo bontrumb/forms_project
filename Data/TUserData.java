@@ -9,6 +9,7 @@ public class TUserData
 	private TStruct[] List_TLifts = {l1, l2, l3};
 	// TSDouble
 	private TWeight d1 = new TWeight();
+	private TStruct[] List_TSDouble = {d1};
 	// other
 	private boolean UserNew = false;
 	// data array
@@ -25,12 +26,17 @@ public class TUserData
 		return this.GetData().get(choice);
 	}
 	// local level
-	protected Object GetData_Entry(String target) {
-		Object obj = new Object();
-		int i = SearchData_Type(target);
-		if (BoolData_Type(i)) {
-			obj = GetData_Entry(i);
+	// stringed Get
+	// string returns
+	// set methods main
+	// init methods
+	private void Init_Data() {
+		for (TStruct o : List_TLifts) {
+			this.GetData().add(o);
 		}
-		return obj;
+		for (TStruct o : List_TSDouble) {
+			this.GetData().add(o);
+		}
 	}
+
 }
