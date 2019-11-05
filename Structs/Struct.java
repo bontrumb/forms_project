@@ -64,7 +64,7 @@ abstract class Struct
 	 * has been initialized.
 	 * @return	#Struct_Lock
 	 */
-	private boolean GetLock() {
+	protected boolean GetLock() {
 		return this.Struct_Lock;
 	}
 	// set methods

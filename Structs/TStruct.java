@@ -4,10 +4,10 @@ import java.util.ArrayList;
 abstract class TStruct extends Struct
 {
 	// constructor
+	/*
 	public TStruct(ArrayList<TStruct_Entry> a, String Type, String Units) {
 		super(a, Type, Units);
 	}
-	/*
 	public TStruct(Struct o, String Type, String Units) {
 		super(Type, Units);
 		super.SetEntry(InitArray());
@@ -15,16 +15,17 @@ abstract class TStruct extends Struct
 	}
 	*/
 	public TStruct(String Type, String Units) {
-		super(Type, Units);
-		super.SetEntry(InitArray());
+		super(new ArrayList<TStruct_Entry>(), Type, Units);
+		// super.SetEntry(InitArray());
 	}
 	// get methods
 	public ArrayList<TStruct_Entry> GetArray() {
+		//ArrayList<TStruct_Entry> ToGet = (ArrayList<TStruct_Entry>) super.GetEntry();
 		return (ArrayList<TStruct_Entry>) super.GetEntry();
 	}
 	//@Override # might not be needed....
 	public Struct GetEntry(int choice) {
-		return GetArray().get(choice).GetEntry();
+		return (Struct) GetArray().get(choice).GetEntry();
 	}
 	public Date GetDate(int choice) {
 		return GetArray().get(choice).GetDate();

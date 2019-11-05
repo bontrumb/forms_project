@@ -3,21 +3,22 @@ abstract class TStruct_Entry extends Struct
 {
 	private Date Struct_Date;
 	// constructor
-	public TStruct_Entry(Struct o, String Type, String Units) {
+	public TStruct_Entry(String Type, String Units) {
+		super(Type, Units);
 		SetDate();
-		Object[] ToSet = {o, GetDate()};
-		super(ToSet, Type, Units);
 	}
 	// get methods
 	public Date GetDate() {
-		return super.GetEntry().get(1);
+		return this.Struct_Date;
 	}
-	public Struct GetEntry() {
-		return super.GetEntry().get(0);
+	public Object[] GetTEntry() {
+		Object[] ToGet = {GetDate(), super.GetEntry()};
+		return ToGet;
 	}
 	// set methods
 	private void SetDate() {
-		this.Struct_Date = new Date();
+		if (!(GetLock())) {
+			this.Struct_Date = new Date();
+		}
 	}
 }
-
