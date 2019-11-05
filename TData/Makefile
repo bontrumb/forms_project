@@ -4,7 +4,7 @@ JAR = /usr/bin/jar
 BIN = bin
 BASEDIR = $(shell basename $(shell pwd))
 VERSION = 0.1
-JCFLAGS = -cp .:../Structs-${VERSION}.jar:../Data-${VERSION}.jar: ../TStructs-${VERSION}.jar 
+JCFLAGS = -cp .:../Structs-${VERSION}.jar:../TStructs-${VERSION}.jar
 all	:	*.java
 	if [ ! -d ${BIN} ]; then \
 		mkdir ${BIN}; \

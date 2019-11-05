@@ -8,6 +8,9 @@ all	:
 		make; \
 		cd .. ;
 	##
+	cd TStructs; \
+		make; \
+		cd .. ;
 	cd Data; \
 		make ; \
 		cd .. ;
