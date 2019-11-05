@@ -1,6 +1,6 @@
 /**The class that holds Integer-typed data.
  */
-abstract class SInt extends Struct
+public class SInt extends Struct
 {
 	/**Temporary storage for containing Integer values.
 	 * Assumes that anything that is a subclass of the 

@@ -1,44 +1,53 @@
 import java.util.Date;
 import java.util.ArrayList;
 
-abstract class TStruct extends Struct
+abstract class TStruct 
 {
+	private ArrayList<TStruct_Entry> TStruct_Array = new ArrayList<TStruct_Entry>();
+	private String TStruct_Type = "";
+	private String TStruct_Units = "";
 	// constructor
-	/*
-	public TStruct(ArrayList<TStruct_Entry> a, String Type, String Units) {
-		super(a, Type, Units);
-	}
-	public TStruct(Struct o, String Type, String Units) {
-		super(Type, Units);
-		super.SetEntry(InitArray());
-		AddEntry(o);
-	}
-	*/
 	public TStruct(String Type, String Units) {
-		super(new ArrayList<TStruct_Entry>(), Type, Units);
-		// super.SetEntry(InitArray());
+		SetType(Type);
+		SetUnits(Units);
 	}
 	// get methods
 	public ArrayList<TStruct_Entry> GetArray() {
-		//ArrayList<TStruct_Entry> ToGet = (ArrayList<TStruct_Entry>) super.GetEntry();
-		return (ArrayList<TStruct_Entry>) super.GetEntry();
+		return this.TStruct_Array;
 	}
-	//@Override # might not be needed....
-	public Struct GetEntry(int choice) {
-		return (Struct) GetArray().get(choice).GetEntry();
+	public TStruct_Entry GetEntry(int choice) {
+		return this.TStruct_Array.get(choice);
+	}
+	public Object GetValue(int choice) {
+		return this.GetEntry(choice).GetEntry();
 	}
 	public Date GetDate(int choice) {
-		return GetArray().get(choice).GetDate();
+		return this.GetEntry(choice).GetDate();
+	}
+	public String GetType() {
+		return this.TStruct_Type;
+	}
+	public String GetUnits() {
+		return this.TStruct_Units;
 	}
 	// add methods
 	protected void AddEntry(TStruct_Entry NewEntry) {
-		GetArray().add(NewEntry);
+		this.GetArray().add(NewEntry);
 	}
-	// init methods
-	private ArrayList<TStruct_Entry> InitArray() {
-		ArrayList<TStruct_Entry> NewTStruct = new ArrayList<TStruct_Entry>();
-		return NewTStruct;
+	// set methods
+	private void SetType(String Type) {
+		this.TStruct_Type = Type;
+	}
+	private void SetUnits(String Units) {
+		this.TStruct_Units = Units;
 	}
 	// validation methods
-	// SE, CC, CT, COT methods are passed through elsewhere....
+	// AE, CC, CT, COT methods are passed through elsewhere....
+	abstract boolean AE(Object o);
+	abstract boolean CC(Object o);
+	abstract boolean CT(Object o);
+
+	protected boolean COT(Object o) {
+		return true;
+	}
 }

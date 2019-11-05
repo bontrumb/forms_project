@@ -1,15 +1,15 @@
-import java.util.ArrayList;
 abstract class TSInt extends TStruct
 {
-	protected TSEInt heap;
+	private TSEInt heap;
 	// constructor
 	public TSInt(String Type, String Units) {
 		super(Type, Units);
+		heap = new TSEInt(GetType(), GetUnits());
 	}
-	// validation methods
-	protected boolean SE(Object o) {
+	// validation check
+	protected boolean AE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
-			super.AddEntry(heap);
+			super.AddEntry(this.heap);
 			return true;
 		} else {
 			return false;
@@ -21,6 +21,4 @@ abstract class TSInt extends TStruct
 	protected boolean CT(Object o) {
 		return this.heap.SE(o);
 	}
-	// init methods
-	
 }

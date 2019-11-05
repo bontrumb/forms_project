@@ -1,11 +1,12 @@
-abstract class TSEInt extends TStruct_Entry
+public class TSEInt extends TStruct_Entry 
 {
-	protected SInt heap;
+	private SInt heap;
 	// constructor
 	public TSEInt(String Type, String Units) {
 		super(Type, Units);
+		heap = new SInt(GetType(), GetUnits());
 	}
-	// validation methods
+	// validation check
 	protected boolean SE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
 			super.SetEntry(this.heap);
@@ -14,7 +15,6 @@ abstract class TSEInt extends TStruct_Entry
 			return false;
 		}
 	}
-
 	protected boolean CC(Object o) {
 		return true;
 	}

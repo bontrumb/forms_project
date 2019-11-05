@@ -1,11 +1,11 @@
-abstract class TSEString extends TStruct_Entry
+abstract class TSEString extends TStruct_Entry 
 {
-	protected SString heap;
+	private SString heap;
 	// constructor
 	public TSEString(String Type, String Units) {
 		super(Type, Units);
 	}
-	// validation methods
+	// validation check
 	protected boolean SE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
 			super.SetEntry(this.heap);
@@ -14,7 +14,6 @@ abstract class TSEString extends TStruct_Entry
 			return false;
 		}
 	}
-
 	protected boolean CC(Object o) {
 		return true;
 	}

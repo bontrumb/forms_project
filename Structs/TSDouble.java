@@ -1,15 +1,14 @@
-import java.util.ArrayList;
 abstract class TSDouble extends TStruct
 {
-	protected TSEDouble heap;
+	private TSEDouble heap;
 	// constructor
 	public TSDouble(String Type, String Units) {
 		super(Type, Units);
 	}
-	// validation methods
-	protected boolean SE(Object o) {
+	// validation check
+	protected boolean AE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
-			super.AddEntry(heap);
+			super.AddEntry(this.heap);
 			return true;
 		} else {
 			return false;
@@ -21,6 +20,4 @@ abstract class TSDouble extends TStruct
 	protected boolean CT(Object o) {
 		return this.heap.SE(o);
 	}
-	// init methods
-	
 }

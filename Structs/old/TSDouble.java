@@ -1,14 +1,15 @@
-abstract class TSString extends TStruct
+import java.util.ArrayList;
+abstract class TSDouble extends TStruct
 {
-	private TSEString heap;
+	protected TSEDouble heap;
 	// constructor
-	public TSString(String Type, String Units) {
+	public TSDouble(String Type, String Units) {
 		super(Type, Units);
 	}
-	// validation check
+	// validation methods
 	protected boolean AE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
-			super.AddEntry(this.heap);
+			super.AddEntry(heap);
 			return true;
 		} else {
 			return false;
@@ -20,4 +21,6 @@ abstract class TSString extends TStruct
 	protected boolean CT(Object o) {
 		return this.heap.SE(o);
 	}
+	// init methods
+	
 }

@@ -11,10 +11,6 @@ abstract class TStruct_Entry extends Struct
 	public Date GetDate() {
 		return this.Struct_Date;
 	}
-	public Object[] GetTEntry() {
-		Object[] ToGet = {GetDate(), super.GetEntry()};
-		return ToGet;
-	}
 	// set methods
 	private void SetDate() {
 		if (!(GetLock())) {

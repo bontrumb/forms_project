@@ -1,19 +1,20 @@
-abstract class TSString extends TStruct
+abstract class TSEInt extends TStruct_Entry
 {
-	private TSEString heap;
+	protected SInt heap;
 	// constructor
-	public TSString(String Type, String Units) {
+	public TSEInt(String Type, String Units) {
 		super(Type, Units);
 	}
-	// validation check
-	protected boolean AE(Object o) {
+	// validation methods
+	protected boolean SE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
-			super.AddEntry(this.heap);
+			super.SetEntry(this.heap);
 			return true;
 		} else {
 			return false;
 		}
 	}
+
 	protected boolean CC(Object o) {
 		return true;
 	}

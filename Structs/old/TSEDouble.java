@@ -1,19 +1,20 @@
-abstract class TSString extends TStruct
+abstract class TSEDouble extends TStruct_Entry
 {
-	private TSEString heap;
+	protected SDouble heap;
 	// constructor
-	public TSString(String Type, String Units) {
+	public TSEDouble(String Type, String Units) {
 		super(Type, Units);
 	}
-	// validation check
-	protected boolean AE(Object o) {
+	// validation methods
+	protected boolean SE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
-			super.AddEntry(this.heap);
+			super.SetEntry(this.heap);
 			return true;
 		} else {
 			return false;
 		}
 	}
+
 	protected boolean CC(Object o) {
 		return true;
 	}
