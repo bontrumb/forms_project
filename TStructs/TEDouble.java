@@ -10,12 +10,6 @@ public class TEDouble extends TStruct_Entry
 	}
 	protected boolean ValidType(Object o) {
 		try {
-			try {
-				this.heap = (int) o;
-				return true;
-			} catch (ClassCastException e) {
-				;
-			}
 			String temp = "" + o;
 			this.heap = Double.parseDouble(temp);
 			return true;
