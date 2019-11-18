@@ -21,7 +21,15 @@ public class TUserData
 		;
 	}
 	// get array
+	protected ArrayList<TStruct> GetArray() {
+		return this.ArrayData;
+	}
+	public TStruct GetData_Var(int choice) {
+		return this.GetArray().get(choice);
+	}
+	// local level
 	
+	// search function
 	// init data
 	private void Init_Data() {
 		for (TStruct o : List_TLifts) {
