@@ -4,9 +4,12 @@ public class TString extends TStruct
 	public TString(String Title, String Type, String Units) {
 		super(Title, Type, Units);
 	}
+	public TString(TString ToCopy) {
+		super(ToCopy);
+	}
 	// add entry
 	protected boolean AddEntry(Object o) {
-		TEString ToAdd = new TEString(GetType(), GetTitle());
+		TEString ToAdd = new TEString(GetType(), GetUnits());
 		if (ToAdd.SetData(o)) {
 			GetArray().add(ToAdd);
 			return true;

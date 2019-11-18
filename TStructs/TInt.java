@@ -4,9 +4,12 @@ public class TInt extends TStruct
 	public TInt(String Title, String Type, String Units) {
 		super(Title, Type, Units);
 	}
+	public TInt(TInt ToCopy) {
+		super(ToCopy);
+	}
 	// add entry
 	protected boolean AddEntry(Object o) {
-		TEInt ToAdd = new TEInt(GetType(), GetTitle());
+		TEInt ToAdd = new TEInt(GetType(), GetUnits());
 		if (ToAdd.SetData(o)) {
 			GetArray().add(ToAdd);
 			return true;

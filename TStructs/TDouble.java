@@ -4,9 +4,12 @@ public class TDouble extends TStruct
 	public TDouble(String Title, String Type, String Units) {
 		super(Title, Type, Units);
 	}
+	public TDouble(TDouble ToCopy) {
+		super(ToCopy);
+	}
 	// add entry
 	protected boolean AddEntry(Object o) {
-		TEDouble ToAdd = new TEDouble(GetType(), GetTitle());
+		TEDouble ToAdd = new TEDouble(GetType(), GetUnits());
 		if (ToAdd.SetData(o)) {
 			GetArray().add(ToAdd);
 			return true;

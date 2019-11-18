@@ -6,6 +6,7 @@ BASEDIR = $(shell basename $(shell pwd))
 VERSION = 0.1
 JCFLAGS = -cp .:../Structs-${VERSION}.jar:../TStructs-${VERSION}.jar
 all	:	*.java
+	./a.sh;
 	if [ ! -d ${BIN} ]; then \
 		mkdir ${BIN}; \
 		fi
