@@ -1,0 +1,49 @@
+\documentclass[../Documentation.tex]{subfiles}
+\begin{document}
+\section{Class Diagram}
+There are two major abstract classes that are inherited by the majority of the smaller classes, either abstract or public.
+\subsection{Struct}
+\dirtree{%
+.1 Struct.
+.2 SInt.
+.3 Resting\_BPM.
+.3 Steps.
+.3 Lifts (uses the Weight object).
+.4 Benches.
+.4 Deadlifts.
+.4 Squats.
+.2 SDouble.
+.3 Height.
+.3 Weight.
+.3 BF.
+.3 Activity\_Level.
+.2 SString.
+.3 Info.
+.3 Gender.
+.2 Calc\_Abstract (in the Calc directory).
+.3 Basal\_Metabolic.
+.3 BMI.
+.3 Display\_Caloric.
+.3 FFMI.
+.3 Lifting\_Stats.
+.3 VO2\_Max.
+}
+\subsection{Menu\_Abstract}
+\dirtree{%
+.1 Menu\_Abstract.
+.2 Home.
+.2 Fitness.
+.2 Editor.
+.2 Editor\_Abstract.
+.3 Editor\_Get.
+.3 Editor\_Set.
+}
+\subsection{Independent Classes}
+The following classes are independent, and thus do not inherit any of the above two classes:
+\begin{itemize}
+	\item \code{UserData.java}
+	\item \code{UserData\_Tools.java}
+	\item \code{Main.java}
+	\item \code{Menu\_Entry.java}
+\end{itemize}
+\end{document}

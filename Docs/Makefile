@@ -1,3 +1,6 @@
 PDFBIN = pdflatex
-all	:	Documentation.tex
-	${PDFBIN} $?
+all	:	Doxyfile
+	doxygen Doxyfile
+	cd latex; \
+		${PDFBIN} refman.tex;
+	
