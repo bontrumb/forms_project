@@ -17,6 +17,12 @@ abstract class TStruct_Entry
 		SetUnits(Units);
 		SetDate();
 	}
+	public TStruct_Entry(TStruct_Entry ToCopy) {
+		SetData(ToCopy.GetData());
+		SetType(ToCopy.GetType());
+		SetUnits(ToCopy.GetUnits());
+		SetData(ToCopy.GetDate());
+	}
 	// get methods
 	public Object GetData() {
 		return this.TStruct_Data;
@@ -48,6 +54,9 @@ abstract class TStruct_Entry
 	}
 	private void SetDate() {
 		this.TStruct_Date = new Date();
+	}
+	private void SetData_Copy(Date b) {
+		this.TStruct_Date = b;
 	}
 	// check methods
 	abstract boolean ValidType(Object o);

@@ -1,0 +1,10 @@
+public class TLifts_LiftType extends TLifts
+{
+	// constructor
+	public TLifts_LiftType() {
+		super("LiftType");
+	}
+	public TLifts_LiftType(TLifts_LiftType ToCopy) {
+		super(ToCopy);
+	}
+}

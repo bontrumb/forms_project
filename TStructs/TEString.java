@@ -4,6 +4,9 @@ public class TEString extends TStruct_Entry
 	public TEString(String Type, String Units) {
 		super(Type, Units);
 	}
+	public TEString(TEString ToCopy) {
+		super(ToCopy);
+	}
 	// check methods
 	protected boolean ValidCondition(Object o) {
 		return true;

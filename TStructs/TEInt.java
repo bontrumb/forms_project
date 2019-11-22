@@ -4,6 +4,9 @@ public class TEInt extends TStruct_Entry
 	public TEInt(String Type, String Units) {
 		super(Type, Units);
 	}
+	public TEInt(TEInt ToCopy) {
+		super(ToCopy);
+	}
 	// check methods
 	protected boolean ValidCondition(Object o) {
 		return true;

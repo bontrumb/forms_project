@@ -4,6 +4,9 @@ public class TEDouble extends TStruct_Entry
 	public TEDouble(String Type, String Units) {
 		super(Type, Units);
 	}
+	public TEDouble(TEDouble ToCopy) {
+		super(ToCopy);
+	}
 	// check methods
 	protected boolean ValidCondition(Object o) {
 		return true;

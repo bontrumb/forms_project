@@ -11,6 +11,14 @@ abstract class TStruct {
 		SetType(Type);
 		SetUnits(Units);
 	}
+	public TStruct(TStruct ToCopy) {
+		SetTitle(ToCopy.GetTitle());
+		SetType(ToCopy.GetType());
+		SetUnits(ToCopy.GetUnits());
+		for (TStruct_Entry o : ToCopy.GetArray()) {
+			this.GetArray().add(o);
+		}
+	}
 	// get methods
 	public ArrayList<TStruct_Entry> GetArray() {
 		return this.TStruct_Array;
@@ -48,16 +56,17 @@ abstract class TStruct {
 	}
 	public String GetEntry_One(int choice) {
 		String s1 = "" + GetData_Entry(choice);
-		String s2 = "" + GetDate(choice);
-		String ToGet = s1 + "\t" + s2;
+		String s2 = " " + GetUnits();
+		String ToGet = s1 + s2;
 		return ToGet;
 	}
 	public String GetAll() {
 		String StringedArray = "";
 		int i;
+		StringedArray += GetTitle() + "\n";
 		System.out.println(GetArray().size());
 		for (i = 0; i < GetArray().size(); i++) {
-			StringedArray += GetEntry_One(i);
+			StringedArray += GetEntry_One(i) + "\t" + GetDate(i) + "\n";
 		}
 		return StringedArray;
 	}

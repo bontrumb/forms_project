@@ -1,6 +1,6 @@
 PDFBIN = pdflatex
-all	:	Doxyfile
-	doxygen Doxyfile
-	cd latex; \
-		${PDFBIN} refman.tex;
+.PHONY	:	Doxyfile
+	# doxygen Doxyfile
+	# cd latex; \
+	#	${PDFBIN} refman.tex;
 	
