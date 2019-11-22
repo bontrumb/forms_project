@@ -1,5 +1,7 @@
 package gui;
 
+import data.UserData;
+import data.UserDataIndex;
 import driver.FormProjectDriver;
 import handlers.BtnBack1Handler;
 import handlers.BtnQuitHandler;
@@ -22,20 +24,20 @@ public class FifthScene extends BaseScene{
 	public void setup() {
 		//Setting up the scene
 		Label textL = new Label("Fitness Dashboard");
-		Label genderL = new Label("Gender:");
-		Label heightL = new Label("Height:");
-		Label weightL = new Label("Weight:");
-		Label BFL = new Label("BF");
-		Label activityLevelL = new Label("Activity Level:");
-		Label stepsL = new Label("Step:s");
-		Label restingbpmL = new Label("Resting BPM:");
-		Label liftsL = new Label("Lifts:");
-		Label caloricL = new Label("Daily caloric requirements:");
-		Label basalL = new Label("Basal Metabolic Rate:");
-		Label FFMIL = new Label("Fat Free Mass Index:");
-		Label VOL = new Label("VO2 Max:");
-		Label bmiL = new Label("BMI:");
-		Label liftL = new Label("lbs required to reach next bracket:");
+		Label genderL = new Label("Gender: " + getDriver().getUserdata().GetData_Var(UserDataIndex.GENDER.getIndex()).GetEntry());
+		Label heightL = new Label("Height: " + getDriver().getUserdata().GetData_Var(UserDataIndex.HEIGHT.getIndex()).GetEntry());
+		Label weightL = new Label("Weight: " + getDriver().getUserdata().GetData_Var(UserDataIndex.WEIGHT.getIndex()).GetEntry());
+		Label BFL = new Label("BF: " + getDriver().getUserdata().GetData_Var(UserDataIndex.BODY_FAT.getIndex()).GetEntry());
+		Label activityLevelL = new Label("Activity Level: " + getDriver().getUserdata().GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry());
+		Label stepsL = new Label("Steps: " + getDriver().getUserdata().GetData_Var(UserDataIndex.STEPS.getIndex()).GetEntry());
+		Label restingbpmL = new Label("Resting BPM: " + getDriver().getUserdata().GetData_Var(UserDataIndex.RESTING_BPM.getIndex()).GetEntry());
+		Label liftsL = new Label("Lifts: " + getDriver().getUserdata().GetData_Var(UserDataIndex.BENCH.getIndex()).GetEntry());
+		Label caloricL = new Label("Daily caloric requirements: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetDC()));
+		Label basalL = new Label("Basal Metabolic Rate: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetBM()));
+		Label FFMIL = new Label("Fat Free Mass Index: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetFFMI()));
+		Label VOL = new Label("(Not yet implemented) VO2 Max: " + getDriver().getUserdataCalc().GetVO2_Max());
+		Label bmiL = new Label("BMI: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetBMI()));
+		Label liftL = new Label("(Not yet implemented) lbs required to reach next bracket: " + getDriver().getUserdataCalc().GetLS());
 
 		Button quit = new Button("Quit");
 		Button back = new Button("Back");

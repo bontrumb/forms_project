@@ -20,7 +20,7 @@ public class SecondScene extends BaseScene{
 	
 	@Override
 	public void setup() {
-		Label welcome = new Label("Welcom to Fitness App!");
+		Label welcome = new Label("Welcome to Fitness App!");
 		Label username = new Label("Username:");
 		Label password = new Label("Password:");
 		TextField usernameInput = new TextField();
