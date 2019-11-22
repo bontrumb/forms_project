@@ -36,7 +36,7 @@ public class FourthScene extends BaseScene{
 		TextField heightInput = new TextField((u.GetData_Var(UserDataIndex.HEIGHT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.HEIGHT.getIndex()).GetEntry().toString() : "")  + "ft");
 		TextField weightInput = new TextField((u.GetData_Var(UserDataIndex.WEIGHT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.WEIGHT.getIndex()).GetEntry().toString() : "") + "lbs");
 		TextField BFInput = new TextField((u.GetData_Var(UserDataIndex.BODY_FAT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.BODY_FAT.getIndex()).GetEntry().toString() : "") + "%");
-		TextField activityLevelInput = new TextField(u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry().toString() : "1-5");
+		TextField activityLevelInput = new TextField(u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry().toString() : "decimal from 1-2");
 		TextField stepsInput = new TextField((u.GetData_Var(UserDataIndex.STEPS.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.STEPS.getIndex()).GetEntry().toString() : "") + "steps");
 		TextField restingBPMInput = new TextField((u.GetData_Var(UserDataIndex.RESTING_BPM.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.RESTING_BPM.getIndex()).GetEntry().toString() : "") + "BPM");
 		TextField liftsInput = new TextField((u.GetData_Var(UserDataIndex.BENCH.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.BENCH.getIndex()).GetEntry().toString() : "") + "reps");
