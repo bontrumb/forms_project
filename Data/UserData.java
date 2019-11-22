@@ -68,7 +68,7 @@ public class UserData
 		int value = -1;
 		int i;
 		for (i = 0; i < GetData().size(); i++) {
-			Strin compare;
+			String compare;
 			compare = GetData_Type(i);
 			if (compare.equals(target)) {
 				value = i;
