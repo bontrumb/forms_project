@@ -6,7 +6,7 @@ public class Lifting_Stats extends Calc_Abstract
 	private String BC, BP, DL, SP, SQ;
 	private static String gender;
 	private static int bodyweight_lbs;
-	private String[] LS_Array; 
+	// private String[] LS_Array; //= {BC, BP, DL, SP, SQ}; 
 	/**Constructor for the class that uses #UserData.
 	 * @param	z	User's data.
 	 */
@@ -18,20 +18,20 @@ public class Lifting_Stats extends Calc_Abstract
 	 *			to calculate the value of the class.
 	 */
 	public Object Result(int choice) {
+		String[] LS_Array = {BC, BP, DL};
 		return LS_Array[choice];
 	}
 	protected Object Method(UserData_Tools use) {
 		this.gender = (String) use.Get("Gender");
 		System.out.println(this.gender);
-		this.bodyweight_lbs = (int) use.Get("Weight");
+		this.bodyweight_lbs = (int) ((double) use.Get("Weight"));
 		System.out.println(this.bodyweight_lbs);
-		this.BC = Calc_BC(gender, bodyweight_lbs);
+		this.BC = Calc_BC(this.gender, this.bodyweight_lbs);
 		this.BP = null;
 		this.DL = null;
 		this.SP = null;
 		this.SQ = null;
-		LS_Array[] = {this.BC, this.BP, this.DL, this.SP, this.SQ};
-		return LS_Array;
+		return null;
 	}
 	// Barbell Curls
 	private String Calc_BC(String gender, int weight) {
