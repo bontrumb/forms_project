@@ -13,6 +13,7 @@ public class Display_Caloric extends Calc_Abstract
 	 * 			to calculate the value of the class.
 	 */
 	protected Object Method(UserData_Tools use) {
-		return null;
+		(String) use.Get("Gender");
+		(int) use.Get("Weight");
 	}
 }
