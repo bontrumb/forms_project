@@ -1,5 +1,6 @@
 abstract class TLifts extends TInt
 {
+/*
 <<<<<<< HEAD
 	private Weight weight;
 	public TLifts(String Type) {
@@ -19,6 +20,7 @@ abstract class TLifts extends TInt
 }
 
 =======
+*/
 	private TWeight Weight_List;
 	private double Weight_Default = 100;
 	// constructor
@@ -68,4 +70,4 @@ abstract class TLifts extends TInt
 		this.Weight_Default = o;
 	}
 }
->>>>>>> 6f3aed03f34689542c969fed8910d104b4c2fbc8
+//>>>>>>> 6f3aed03f34689542c969fed8910d104b4c2fbc8
