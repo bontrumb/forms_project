@@ -3,37 +3,39 @@ import java.util.Scanner;
  */
 public class Lifting_Stats extends Calc_Abstract
 {
-	private String BC, BP, DL, SP, SQ;
-	private static String gender;
-	private static int bodyweight_lbs;
+	private SS_Abstract BC, BP, DL, SP, SQ;
 	// private String[] LS_Array; //= {BC, BP, DL, SP, SQ}; 
 	/**Constructor for the class that uses #UserData.
 	 * @param	z	User's data.
 	 */
 	public Lifting_Stats(UserData z) {
 		super(z, "Lifting Stats", "");
+		BC = new SS_Barbell_Curls(z);
+		BP = new SS_Bench_Presses(z);
+		DL = new SS_Deadlifts(z);
+		SP = new SS_Shoulder_Presses(z);
+		SQ = new SS_Squats(z);
 	}
 	/**The body of the calculations.
 	 * @param	use	Instance of using the user's values
 	 *			to calculate the value of the class.
 	 */
 	public Object Result(int choice) {
-		String[] LS_Array = {BC, BP, DL};
-		return LS_Array[choice];
+		Calc();
+		SS_Abstract[] LS_Array = {BC, BP, DL, SP, SQ};
+		return LS_Array[choice].Result();
 	}
 	protected Object Method(UserData_Tools use) {
+		/*
 		this.gender = (String) use.Get("Gender");
 		System.out.println(this.gender);
 		this.bodyweight_lbs = (int) ((double) use.Get("Weight"));
 		System.out.println(this.bodyweight_lbs);
-		this.BC = Calc_BC(this.gender, this.bodyweight_lbs);
-		this.BP = null;
-		this.DL = null;
-		this.SP = null;
-		this.SQ = null;
+		*/
 		return null;
 	}
 	// Barbell Curls
+	/*
 	private String Calc_BC(String gender, int weight) {
 		Scanner standard = new Scanner(System.in);
 		System.out.print("\nEnter your one-rep max lift (lbs.): ");
@@ -50,6 +52,8 @@ public class Lifting_Stats extends Calc_Abstract
 
 	private String maleBBCStandard(int bbcStandard, int weight) {
 		int temp_bodyweight = weight;
+		//System.out.println(temp_bodyweight);
+		//System.out.println(bbcStandard);
 		temp_bodyweight = ((temp_bodyweight + 5) / 10) * 10; // round to nearest ten
 
 		switch(temp_bodyweight)
@@ -434,6 +438,338 @@ public class Lifting_Stats extends Calc_Abstract
 	}
 
 	private String femaleBBCStandard(int bbcStandard, int weight) {
-		return "Hah";
+		int temp_bodyweight = bodyweight_lbs;
+		temp_bodyweight = ((temp_bodyweight + 5) / 10) * 10; // round to nearest ten
+
+		switch(temp_bodyweight)
+		{
+			case 90:
+
+				if (bbcStandard < 7) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 7 && bbcStandard < 19) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 19 && bbcStandard < 37) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 37 && bbcStandard < 62) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 62 && bbcStandard < 91) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 91) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 100:
+
+				if (bbcStandard < 9) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 9 && bbcStandard < 22) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 22 && bbcStandard < 41) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 41 && bbcStandard < 66) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 66 && bbcStandard < 96) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 96) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 110:
+
+				if (bbcStandard < 10) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 10 && bbcStandard < 24) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 24 && bbcStandard < 44) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 44 && bbcStandard < 71) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 71 && bbcStandard < 102) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 102) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 120:
+
+				if (bbcStandard < 12) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 12 && bbcStandard < 26) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 26 && bbcStandard < 47) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 47 && bbcStandard < 75) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 75 && bbcStandard < 106) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 106) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 130:
+
+				if (bbcStandard < 14) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 14 && bbcStandard < 29) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 29 && bbcStandard < 50) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 50 && bbcStandard < 78) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 78 && bbcStandard < 111) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 111) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 140:
+
+				if (bbcStandard < 15) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 15 && bbcStandard < 31) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 31 && bbcStandard < 53) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 53 && bbcStandard < 82) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 82 && bbcStandard < 115) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 115) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 150:
+
+				if (bbcStandard < 17) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 17 && bbcStandard < 33) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 33 && bbcStandard < 56) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 56 && bbcStandard < 85) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 85 && bbcStandard < 119) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 119) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 160:
+
+				if (bbcStandard < 18) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 18 && bbcStandard < 35) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 35 && bbcStandard < 59) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 59 && bbcStandard < 89) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 89 && bbcStandard < 123) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 123) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 170:
+
+				if (bbcStandard < 19) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 19 && bbcStandard < 37) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 37 && bbcStandard < 61) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 61 && bbcStandard < 92) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 92 && bbcStandard < 127) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 127) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 180:
+
+				if (bbcStandard < 21) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 21 && bbcStandard < 39) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 39 && bbcStandard < 64) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 64 && bbcStandard < 95) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 95 && bbcStandard < 130) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 130) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 190:
+
+				if (bbcStandard < 22) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 22 && bbcStandard < 41) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 41 && bbcStandard < 66) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 66 && bbcStandard < 98) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 98 && bbcStandard < 133) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 133) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 200:
+
+				if (bbcStandard < 23) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 23 && bbcStandard < 42) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 42 && bbcStandard < 68) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 68 && bbcStandard < 100) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 100 && bbcStandard < 137) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 137) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 210:
+
+				if (bbcStandard < 25) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 25 && bbcStandard < 44) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 44 && bbcStandard < 70) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 70 && bbcStandard < 103) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 103 && bbcStandard < 140) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 140) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 220:
+
+				if (bbcStandard < 26) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 26 && bbcStandard < 46) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 46 && bbcStandard < 73) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 73 && bbcStandard < 105) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 105 && bbcStandard < 143) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 143) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 230:
+
+				if (bbcStandard < 27) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 27 && bbcStandard < 47) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 47 && bbcStandard < 75) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 75 && bbcStandard < 108) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 108 && bbcStandard < 145) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 145) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 240:
+
+				if (bbcStandard < 28) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 28 && bbcStandard < 49) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 49 && bbcStandard < 77) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 77 && bbcStandard < 110) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 110 && bbcStandard < 148) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 148) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 250:
+
+				if (bbcStandard < 30) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 30 && bbcStandard < 51) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 51 && bbcStandard < 79) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 79 && bbcStandard < 113) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 113 && bbcStandard < 151) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 151) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			case 260:
+
+				if (bbcStandard < 31) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 31 && bbcStandard < 52) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 52 && bbcStandard < 80) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 80 && bbcStandard < 115) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 115 && bbcStandard < 154) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 154) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				}
+				
+
+			default:
+
+				System.out.println("\n!! Bodyweight not found within database (110-310 lbs.). Initializing averaged standards. !!");
+
+				if (bbcStandard < 14) {
+					return "\n**You are stronger than 0% of lifters.";					
+				} else if (bbcStandard >= 14 && bbcStandard < 31) {
+					return "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (bbcStandard >= 31 && bbcStandard < 54) {
+					return "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (bbcStandard >= 54 && bbcStandard < 84) {
+					return "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (bbcStandard >= 84 && bbcStandard < 119) {
+					return "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (bbcStandard >= 119) {
+					return "\n**You are stronger than 95% of lifters (ELITE).";
+				} else {
+					return "No Info!";
+				}
+		}
 	}
+	// Bench Press
+	*/
 }

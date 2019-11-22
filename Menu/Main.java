@@ -7,6 +7,7 @@ public class Main
 	 */
 	public static void main(String[] args) {
 		UserData z = new UserData();
+		Profiler q = new Profiler(z);
 		Home a = new Home();
 		a.Menu_Main(z);
 	}

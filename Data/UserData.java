@@ -22,7 +22,7 @@ public class UserData
 	private Gender s2 = new Gender();
 	private Struct[] List_String = {s1, s2};
 	// other
-	private static boolean UserNew = true;
+	private boolean UserNew = true;
 	// data array
 	private ArrayList<Struct> ArrayData = new ArrayList<Struct>();
 	// constructor
@@ -127,7 +127,6 @@ public class UserData
 		for (Struct o : List_String) {
 			this.ArrayData.add(o);
 		}
-		this.UserNew = false;
 	}
 }
 

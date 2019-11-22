@@ -7,7 +7,7 @@ abstract class Calc_Abstract extends Struct
 	/**Calls #UserData_Tools to get values
 	 * of the #UserData.
 	 */
-	private UserData_Tools x;
+	protected UserData_Tools x;
 	/**Temporary heap for calculations.
 	 */
 	protected Object heap;
@@ -19,12 +19,12 @@ abstract class Calc_Abstract extends Struct
 	public Calc_Abstract(UserData z, String Type, String Units) {
 		super(Type, Units);
 		this.x = new UserData_Tools(z);
-		Calc();
 	}
 	/**Returns the value of the calculation.
 	 * @return	#Struct.GetEntry
 	 */
 	public Object Result() {
+		Calc();
 		return GetEntry();
 	}
 	/**Abstract class to force a method for calculation.
@@ -35,13 +35,13 @@ abstract class Calc_Abstract extends Struct
 	abstract Object Method(UserData_Tools use);
 	/**Runs the methods for calculations.
 	 */
-	private void Calc() {
+	protected void Calc() {
 		UserData_Tools use = this.x;
 		SE(Method(use));
 	}
 	/**@see #Struct.SE
 	 */
-	public boolean SE(Object o) {
+	protected boolean SE(Object o) {
 		if (CT(o) && CC(o) && COT(o)) {
 			super.SetEntry(this.heap);
 			return true;

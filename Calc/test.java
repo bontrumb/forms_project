@@ -4,8 +4,8 @@ public class test
 		UserData a = new UserData();
 		UserData_Tools b = new UserData_Tools(a);
 		// System.out.println(c.Result(0));
-		b.Set("Gender", "M");
-		b.Set("Weight", 150);
+		//b.Set("Gender", "F");
+		//b.Set("Weight", 150);
 		System.out.println(b.Get("Gender"));
 		System.out.println(b.Get("Weight"));
 		System.out.println(a.GetData_Entry("Weight"));
