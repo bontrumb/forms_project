@@ -19,6 +19,7 @@ abstract class Calc_Abstract extends Struct
 	public Calc_Abstract(UserData z, String Type, String Units) {
 		super(Type, Units);
 		this.x = new UserData_Tools(z);
+		Calc();
 	}
 	/**Returns the value of the calculation.
 	 * @return	#Struct.GetEntry
