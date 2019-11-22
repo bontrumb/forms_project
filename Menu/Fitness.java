@@ -47,6 +47,7 @@ public class Fitness extends Menu_Abstract
 	public void SelectMenu(int choice, UserData z) {
 		Editor a = new Editor();
 		UserData_Calc b = new UserData_Calc(z);
+		Lifting_Standards c = new Lifting_Standards();
 		switch (choice) {
 			case 1:	a.Menu_Main(z);
 				break;
@@ -60,7 +61,7 @@ public class Fitness extends Menu_Abstract
 				break;
 			case 6: System.out.println(b.GetBMI());
 				break;
-			case 7:	System.out.println(b.GetLS());
+			case 7:	c.Menu_Main(z);
 				break;
 		}
 	}

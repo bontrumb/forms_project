@@ -68,8 +68,8 @@ public class UserData_Calc
 	}
 	/**Returns Lifting_Stats values.
 	 */
-	public Object GetLS() {
-		return LS.Result();
+	public Object GetLS(int choice) {
+		return LS.Result(choice);
 	}
 	/**Initializes the calculation values into #ArrayCalc.
 	 */
