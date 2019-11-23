@@ -1,5 +1,7 @@
 package gui;
 
+import data.UserData;
+import data.UserDataIndex;
 import driver.FormProjectDriver;
 import handlers.BtnQuitHandler;
 import handlers.BtnUpdateHandler;
@@ -26,17 +28,18 @@ public class FourthScene extends BaseScene{
 		Label weightL = new Label("Weight:");
 		Label BFL = new Label("BF");
 		Label activityLevelL = new Label("Activity Level:");
-		Label stepsL = new Label("Step:s");
+		Label stepsL = new Label("Steps:");
 		Label restingbpmL = new Label("Resting BPM:");
 		Label liftsL = new Label("Lifts:");
-		TextField genderInput = new TextField("F/M");
-		TextField heightInput = new TextField("ft.");
-		TextField weightInput = new TextField("lbs.");
-		TextField BFInput = new TextField("%");
-		TextField activityLevelInput = new TextField();
-		TextField stepsInput = new TextField("steps");
-		TextField restingBPMInput = new TextField("BPM");
-		TextField liftsInput = new TextField("reps");
+		UserData u = getDriver().getUserdata();
+		TextField genderInput = new TextField(u.GetData_Var(UserDataIndex.GENDER.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.GENDER.getIndex()).GetEntry().toString() : "F/M");
+		TextField heightInput = new TextField((u.GetData_Var(UserDataIndex.HEIGHT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.HEIGHT.getIndex()).GetEntry().toString() : "")  + "ft");
+		TextField weightInput = new TextField((u.GetData_Var(UserDataIndex.WEIGHT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.WEIGHT.getIndex()).GetEntry().toString() : "") + "lbs");
+		TextField BFInput = new TextField((u.GetData_Var(UserDataIndex.BODY_FAT.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.BODY_FAT.getIndex()).GetEntry().toString() : "") + "%");
+		TextField activityLevelInput = new TextField(u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.ACTIVITY_LEVEL.getIndex()).GetEntry().toString() : "decimal from 1-2");
+		TextField stepsInput = new TextField((u.GetData_Var(UserDataIndex.STEPS.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.STEPS.getIndex()).GetEntry().toString() : "") + "steps");
+		TextField restingBPMInput = new TextField((u.GetData_Var(UserDataIndex.RESTING_BPM.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.RESTING_BPM.getIndex()).GetEntry().toString() : "") + "BPM");
+		TextField liftsInput = new TextField((u.GetData_Var(UserDataIndex.BENCH.getIndex()).GetEntry() != null ? u.GetData_Var(UserDataIndex.BENCH.getIndex()).GetEntry().toString() : "") + "reps");
 		Button update = new Button("Save");
 		Button quit = new Button("Quit");
 		
@@ -65,9 +68,19 @@ public class FourthScene extends BaseScene{
 	   //Attach the event handlers
 	 	BtnQuitHandler qHandler = new BtnQuitHandler();
 	 	quit.setOnAction(qHandler);
-	 	
-	 	BtnUpdateHandler UHandler = new BtnUpdateHandler(getDriver());
-		update.setOnAction(UHandler);
+
+		update.setOnAction(click -> {
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.GENDER.getIndex(), genderInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.HEIGHT.getIndex(), heightInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.WEIGHT.getIndex(), weightInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.BODY_FAT.getIndex(), BFInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.ACTIVITY_LEVEL.getIndex(), activityLevelInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.STEPS.getIndex(), stepsInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.RESTING_BPM.getIndex(), restingBPMInput.getCharacters().toString());
+			getDriver().getUserdata().SetEntry_Direct(UserDataIndex.BENCH.getIndex(), liftsInput.getCharacters().toString());
+			ThirdScene scene = new ThirdScene(getDriver());
+			scene.setup();
+		});
 		
 
 		

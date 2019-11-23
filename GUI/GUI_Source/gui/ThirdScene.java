@@ -17,18 +17,25 @@ public class ThirdScene extends BaseScene {
 	
 	@Override
 	public void setup() {
-		Button track = new Button("Track Fitness");	//Launches the fourth scene
-		Button view = new Button("View Insights");	//Launches the fith scene
+		Button track = new Button("Track Fitness");	//Launches the seventh scene
+		Button update = new Button("Update Profile");	//Launches the fourth same as the update profile scene
+		Button view = new Button("View Insights");	//Launches the fifth scene
 		
 		//Add buttons to hbox
 		HBox layout3 = new HBox();
 		layout3.getChildren().add(track);
+		layout3.getChildren().add(update);
 		layout3.getChildren().add(view);
 		layout3.setAlignment(Pos.CENTER);
 		
 		//Attach the event handlers
 		BtnViewHandler vHandler = new BtnViewHandler(getDriver());
 		view.setOnAction(vHandler);
+
+		update.setOnAction(click -> {
+			FourthScene scene = new FourthScene(getDriver());
+			scene.setup();
+		});
 		
 		BtnTrackHandler tHandler = new BtnTrackHandler(getDriver());
 		track.setOnAction(tHandler);
