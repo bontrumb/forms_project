@@ -34,7 +34,7 @@ define G_JAVA
 $(JAVAC) $(S_JAVA) -cp $(LIBS) -d $(LIBS)
 endef
 .PHONY	: Structs Menu
-all	: dir classes
+all	: dir classes exec
 classes	: Menu
 Menu	: Calc
 	$(G_JAVA);
@@ -54,7 +54,7 @@ $(DIRS) :
 	fi
 test	: $(LIBS)/Main.class
 	if [ -f $< ]; then \
-		cd $(LIBS); \
-		$(JAVAE) Main; \
+		cd $(BIN); \
+		./a.out; \
 	fi
 ## need to make a c program to create an executable...
