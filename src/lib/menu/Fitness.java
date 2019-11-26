@@ -60,7 +60,7 @@ public class Fitness extends Menu_Abstract
 				break;
 			case 6: System.out.println(b.GetBMI());
 				break;
-			case 7:	System.out.println(b.GetLS());
+			case 7:	System.out.println();
 				break;
 		}
 	}
