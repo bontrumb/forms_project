@@ -1,7 +1,7 @@
-#HEALTH AND FITNESS APP (HFA) V0.1
+# HEALTH AND FITNESS APP (HFA) V0.1
 
-##Compiling
-###Prequisites
+## Compiling
+### Prequisites
 - Java JDK and JRE 8 or higher
 - JavaFX
 - GCC or a C Compiler (for the runtime executable)
@@ -11,7 +11,7 @@
 - * *(Strongly Recommended)* * GNU sed 4.5 or higher
 - * *(Strongly Recommended)* * Doxygen 1.7 or higher
 - * *(Strongly Recommended)* * LaTeX
-###Instructions (Using GNU Make)
+### Instructions (Using GNU Make)
 Run `make` to create the program including the executable.
 Run `make all` to create the program and documentation.
 Run `make docs` to create the documentation.
