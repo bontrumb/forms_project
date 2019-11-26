@@ -5,12 +5,12 @@
 - Java JDK and JRE 8 or higher
 - JavaFX
 - GCC or a C Compiler (for the runtime executable)
-- * *(Strongly Recommended)* * GNU bash 4.0 or higher
-- * *(Strongly Recommended)* * GNU binutils and coreutils
-- * *(Strongly Recommended)* * GNU Make 4.2 or higher
-- * *(Strongly Recommended)* * GNU sed 4.5 or higher
-- * *(Strongly Recommended)* * Doxygen 1.7 or higher
-- * *(Strongly Recommended)* * LaTeX
+- *(Strongly Recommended)* GNU bash 4.0 or higher
+- *(Strongly Recommended)* GNU binutils and coreutils
+- *(Strongly Recommended)* GNU Make 4.2 or higher
+- *(Strongly Recommended)* GNU sed 4.5 or higher
+- *(Strongly Recommended)* Doxygen 1.7 or higher
+- *(Strongly Recommended)* LaTeX
 ### Instructions (Using GNU Make)
 Run `make` to create the program including the executable.
 Run `make all` to create the program and documentation.
@@ -18,12 +18,12 @@ Run `make docs` to create the documentation.
 Run `make test` to test the TUI version of the program.
 ###Instructions (Manually Compiling)
 Without using the recommended tools, compile the following class directories in order, along with its class prerequisites:
-- abstract: * *none* *
-- structs: * *abstract* *
-- data: * *structs* *
-- user: * *data* *
-- calc: * *calc* *
-- menu: * *calc* *
+- abstract: *none*
+- structs: *abstract*
+- data: *structs*
+- user: *data*
+- calc: *calc*
+- menu: *calc*
 All of them should be directed to the topmost directory `lib`, and hence the classpath should point to `<toplevel>/lib`. The compile command for each one is:
 ```
 cd src/lib/<class>
