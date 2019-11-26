@@ -16,7 +16,7 @@ Run `make` to create the program including the executable.
 Run `make all` to create the program and documentation.
 Run `make docs` to create the documentation.
 Run `make test` to test the TUI version of the program.
-###Instructions (Manually Compiling)
+### Instructions (Manually Compiling)
 Without using the recommended tools, compile the following class directories in order, along with its class prerequisites:
 - abstract: *none*
 - structs: *abstract*
