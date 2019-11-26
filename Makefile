@@ -83,6 +83,7 @@ GEN_DIR :
 
 test	: main
 	./bin/Fitness_App
+
 clean	:
 	@if [ -d bin ]; then \
 		rm -rvf bin; \
