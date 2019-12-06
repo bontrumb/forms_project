@@ -134,7 +134,7 @@ abstract class Menu_Abstract {
 	/**Clears the current screen, refresh in a sense,
 	 * without building too much buffer on the screen.
 	 */
-	protected static void ClearScreen() {
+	public static void ClearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();  
 	}

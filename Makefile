@@ -5,7 +5,7 @@ CFLAGS=-Wall -Werror
 JCFLAGS=-Werror -g
 DIRS=bin docs lib
 BASE_DIR:=$(shell pwd)
-L_DIRS:= structs menu data calc gui user driver handlers
+L_DIRS:= structs menu data calc gui user driver handlers file_io
 T_DIRS:=bin docs lib
 SRC:=$(BASE_DIR)/src
 T_LIB:=$(BASE_DIR)/lib
@@ -41,14 +41,15 @@ export JCOMP JTEST T_LIB S_TESTS S_LIB LG_DIRS
 
 .PHONY  : all clean test GEN_DIR $(L_DIRS)
 
-all     : GEN_DIR menu
+all     : GEN_DIR menu 
 
 GEN_DIR :
 	$(call EXISTDIR,bin);
 	$(call EXISTDIR,docs);
 	$(call EXISTDIR,lib);
 gui	: menu
-menu	: calc
+menu	: file_io
+file_io : calc
 calc	: data
 data	: structs
 $(L_DIRS)	:

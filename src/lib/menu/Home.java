@@ -1,5 +1,5 @@
 package menu;
-
+import file_io.*;
 import data.UserData;
 
 /**The Home Menu interface.
@@ -31,6 +31,18 @@ public class Home extends Menu_Abstract
 			case 1:	System.out.println("To Track Fitness (NOT IMPLEMENTED)");
 				break;
 			case 2: b.Menu_Main(z);
+		}
+		if (SaveProgress(z)) {
+			System.out.println("Saved the data..");
+		} else {
+			System.out.println("Cannot save the data...");
+		}
+	}
+	private boolean SaveProgress(UserData ToUse) {
+		if (UserData_File.SaveData(ToUse)) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }

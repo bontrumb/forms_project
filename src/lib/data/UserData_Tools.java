@@ -23,7 +23,7 @@ public class UserData_Tools {
 		String type = "";
 		int i = SearchData_Type(target);
 		if (BoolData_Type(i)) {
-			type = z.GetData_Type(i);
+			type += z.GetData_Type(i);
 		}
 		return type;
 	}
@@ -32,7 +32,7 @@ public class UserData_Tools {
 		String units = "";
 		int i = SearchData_Type(target);
 		if (BoolData_Type(i)) {
-			units = z.GetData_Units(i);
+			units += z.GetData_Units(i);
 		}
 		return units;
 	}
@@ -52,16 +52,18 @@ public class UserData_Tools {
 	}
 
 	// set methods
-	public void Set(String target, Object value) {
+	public boolean Set(String target, Object value) {
 		int i = SearchData_Type(target);
 		String temp = value.toString();
 		if (z.SetEntry_Direct(i, temp)) {
 			System.out.println("Task succeeded, the value of " +
 					target + " is " +
 					Get(target));
+			return true;
 		} else {
 			System.out.println("Unable to set " + target + " with " +
 					temp + "");
+			return false;
 		}
 	}
 	
