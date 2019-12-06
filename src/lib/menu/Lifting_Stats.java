@@ -18,16 +18,17 @@ public class Lifting_Stats extends Menu_Abstract
 		AddMenu_Entry(Squat);
 	}
 	public void SelectMenu(int choice, UserData z) {
+		UserData_Calc b = new UserData_Calc(z);
 		switch (choice) {
-			case 1:	System.out.println("Barbell Curl");
+			case 1:	System.out.println(b.GetBC());
 				break;
-			case 2:	System.out.println("Bench Press");
+			case 2:	System.out.println(b.GetBP());
 				break;
-			case 3: System.out.println("Deadlift");
+			case 3: System.out.println(b.GetDL());
 				break;
-			case 4: System.out.println("Shoulder Press");
+			case 4: System.out.println(b.GetSP());
 				break;
-			case 5: System.out.println("Squat");
+			case 5: System.out.println(b.GetSQ());
 				break;
 		}
 	}

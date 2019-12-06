@@ -5,7 +5,7 @@ import data.Weight;
 import data.UserData_Tools;
 import data.UserDataIndex;
 import java.util.Scanner;
-
+import java.lang.NullPointerException;
 /**Calculates and returns Lifting Stats values.
  */
 public abstract class Lifting_Abstract extends Calc_Abstract
@@ -24,24 +24,29 @@ public abstract class Lifting_Abstract extends Calc_Abstract
 	 *			to calculate the value of the class.
 	 */
 	protected Object Method(UserData_Tools use) {
-		this.gender = (String) use.GetDataEntry(UserDataIndex.GENDER);
-		this.weight = (double) use.GetDataEntry(UserDataIndex.WEIGHT);
+		try {
+			this.gender = (String) use.GetDataEntry(UserDataIndex.GENDER);
+			this.weight = (double) use.GetDataEntry(UserDataIndex.WEIGHT);
+		} catch (NullPointerException e) {
+			return "Check if your weight and/or gender has been entered.";
+		}
 		Scanner GetRepWeight = new Scanner(System.in);
 		rep_weight = new Weight();
-		double j;
+		System.out.println("Your current weight is: " + this.weight 
+				+ "(lbs.)\n" + "Your gender is " + this.gender);
 		while (true) {
 			try {
 				System.out.println("Enter your one-rep max lift"
-						+ "(" + rep_weight.GetUnits() +
+						+ " (" + rep_weight.GetUnits() +
 						")");
-				j = GetRepWeight.nextDouble();
-				if (rep_weight.SE(j)) {
+				if (rep_weight.SE(GetRepWeight.next())) {
 					break;
 				} else {
 					System.out.println("Invalid entry");
 				}
 			} catch (Exception e) {
-				System.out.println("Invalid input");
+				System.out.println("Invalid input - exception: "+ e);
+				GetRepWeight.nextLine();
 			}
 		}
 		return WeightMessage(this.gender, this.weight, 
@@ -53,9 +58,9 @@ public abstract class Lifting_Abstract extends Calc_Abstract
 		int urep_weight = (int) prep_weight;
 		String ngender = gender.toUpperCase();
 		String result;
-		if (ngender.equals("M")) {
+		if (ngender.equals("M") || ngender.equals("m")) {
 			result = MaleStandard(uweight, urep_weight);
-		} else if (ngender.equals("F")) {
+		} else if (ngender.equals("F") || ngender.equals("f")) {
 			result = FemaleStandard(uweight, urep_weight);
 		} else {
 			result = "No valid info";

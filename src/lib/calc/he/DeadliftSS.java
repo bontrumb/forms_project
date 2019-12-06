@@ -2,32 +2,32 @@ import java.util.Scanner;
 
 public class DeadliftSS extends StrengthStandard
 {
-	private int dlfStandard;
+	private int rweight;
 
 	private String gender;
 	private int bodyweight_lbs;
 
 	public DeadliftSS(String gender, int bodyweight_lbs)
 	{
-		this.gender = gender.toUpperCase();
+		this.gender = gender.toUpperCase(;
 		this.bodyweight_lbs = bodyweight_lbs;
 	}
 
 	public void deadlift()
 	{
-		Scanner standard = new Scanner(System.in);
+		Scanner standard = new Scanner(System.in;
 
-		System.out.print("\nEnter your one-rep max lift (lbs.): ");
-		dlfStandard = standard.nextInt();
+		System.out.print("\nEnter your one-rep max lift (lbs.): ";
+		rweight = standard.nextInt(;
 
 		if (gender.equals("M")) {
-			maleDLFStandard();
+			malerweight(;
 		} else if (gender.equals("F")) {
-			femaleDLFStandard();
+			femalerweight(;
 		}
 	}
 
-	public void maleDLFStandard() // https://strengthlevel.com/strength-standards/deadlift
+	public void malerweight() // https://strengthlevel.com/strength-standards/deadlift
 	{
 		int weight = bodyweight_lbs;
 		weight = ((weight + 5) / 10) * 10; // round to nearest ten
@@ -36,383 +36,383 @@ public class DeadliftSS extends StrengthStandard
 		{
 			case 110:
 
-				if (dlfStandard < 96) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 96 && dlfStandard < 144) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 144 && dlfStandard < 205) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 205 && dlfStandard < 275) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 275 && dlfStandard < 353) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 353) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 96) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 96 && rweight < 144) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 144 && rweight < 205) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 205 && rweight < 275) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 275 && rweight < 353) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 353) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 120:
 
-				if (dlfStandard < 111) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 111 && dlfStandard < 162) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 162 && dlfStandard < 226) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 226 && dlfStandard < 300) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 300 && dlfStandard < 381) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 381) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 111) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 111 && rweight < 162) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 162 && rweight < 226) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 226 && rweight < 300) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 300 && rweight < 381) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 381) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 130:
 
-				if (dlfStandard < 126) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 126 && dlfStandard < 180) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 180 && dlfStandard < 246) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 246 && dlfStandard < 324) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 324 && dlfStandard < 407) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 407) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 126) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 126 && rweight < 180) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 180 && rweight < 246) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 246 && rweight < 324) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 324 && rweight < 407) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 407) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 140:
 
-				if (dlfStandard < 140) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 140 && dlfStandard < 197) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 197 && dlfStandard < 266) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 266 && dlfStandard < 346) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 346 && dlfStandard < 432) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 432) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 140) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 140 && rweight < 197) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 197 && rweight < 266) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 266 && rweight < 346) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 346 && rweight < 432) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 432) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 150:
 
-				if (dlfStandard < 154) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 154 && dlfStandard < 213) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 213 && dlfStandard < 285) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 285 && dlfStandard < 368) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 368 && dlfStandard < 457) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 457) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 154) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 154 && rweight < 213) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 213 && rweight < 285) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 285 && rweight < 368) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 368 && rweight < 457) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 457) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 160:
 
-				if (dlfStandard < 168) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 168 && dlfStandard < 229) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 229 && dlfStandard < 304) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 304 && dlfStandard < 389) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 389 && dlfStandard < 480) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 480) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 168) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 168 && rweight < 229) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 229 && rweight < 304) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 304 && rweight < 389) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 389 && rweight < 480) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 480) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 170:
 
-				if (dlfStandard < 181) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 181 && dlfStandard < 245) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 245 && dlfStandard < 322) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 322 && dlfStandard < 409) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 409 && dlfStandard < 502) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 502) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 181) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 181 && rweight < 245) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 245 && rweight < 322) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 322 && rweight < 409) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 409 && rweight < 502) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 502) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 180:
 
-				if (dlfStandard < 194) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 194 && dlfStandard < 260) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 260 && dlfStandard < 339) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 339 && dlfStandard < 429) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 429 && dlfStandard < 524) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 524) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 194) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 194 && rweight < 260) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 260 && rweight < 339) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 339 && rweight < 429) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 429 && rweight < 524) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 524) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 190:
 
-				if (dlfStandard < 207) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 207 && dlfStandard < 275) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 275 && dlfStandard < 356) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 356 && dlfStandard < 448) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 448 && dlfStandard < 545) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 545) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 207) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 207 && rweight < 275) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 275 && rweight < 356) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 356 && rweight < 448) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 448 && rweight < 545) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 545) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 200:
 
-				if (dlfStandard < 219) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 219 && dlfStandard < 289) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 289 && dlfStandard < 372) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 372 && dlfStandard < 466) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 466 && dlfStandard < 565) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 565) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 219) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 219 && rweight < 289) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 289 && rweight < 372) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 372 && rweight < 466) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 466 && rweight < 565) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 565) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 210:
 
-				if (dlfStandard < 232) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 232 && dlfStandard < 303) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 303 && dlfStandard < 388) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 388 && dlfStandard < 484) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 484 && dlfStandard < 585) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 585) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 232) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 232 && rweight < 303) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 303 && rweight < 388) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 388 && rweight < 484) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 484 && rweight < 585) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 585) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 220:
 
-				if (dlfStandard < 244) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 244 && dlfStandard < 317) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 317 && dlfStandard < 404) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 404 && dlfStandard < 501) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 501 && dlfStandard < 604) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 604) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 244) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 244 && rweight < 317) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 317 && rweight < 404) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 404 && rweight < 501) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 501 && rweight < 604) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 604) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 230:
 
-				if (dlfStandard < 255) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 255 && dlfStandard < 330) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 330 && dlfStandard < 419) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 419 && dlfStandard < 518) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 518 && dlfStandard < 622) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 622) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 255) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 255 && rweight < 330) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 330 && rweight < 419) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 419 && rweight < 518) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 518 && rweight < 622) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 622) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 240:
 
-				if (dlfStandard < 267) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 267 && dlfStandard < 343) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 343 && dlfStandard < 433) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 433 && dlfStandard < 534) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 534 && dlfStandard < 640) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 640) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 267) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 267 && rweight < 343) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 343 && rweight < 433) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 433 && rweight < 534) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 534 && rweight < 640) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 640) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 250:
 
-				if (dlfStandard < 278) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 278 && dlfStandard < 356) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 356 && dlfStandard < 448) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 448 && dlfStandard < 550) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 550 && dlfStandard < 657) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 657) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 278) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 278 && rweight < 356) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 356 && rweight < 448) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 448 && rweight < 550) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 550 && rweight < 657) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 657) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 260:
 
-				if (dlfStandard < 289) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 289 && dlfStandard < 368) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 368 && dlfStandard < 462) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 462 && dlfStandard < 565) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 565 && dlfStandard < 674) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 674) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 289) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 289 && rweight < 368) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 368 && rweight < 462) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 462 && rweight < 565) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 565 && rweight < 674) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 674) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 270:
 
-				if (dlfStandard < 300) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 300 && dlfStandard < 380) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 380 && dlfStandard < 475) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 475 && dlfStandard < 580) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 580 && dlfStandard < 691) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 691) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 300) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 300 && rweight < 380) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 380 && rweight < 475) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 475 && rweight < 580) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 580 && rweight < 691) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 691) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 280:
 
-				if (dlfStandard < 311) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 311 && dlfStandard < 392) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 392 && dlfStandard < 488) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 488 && dlfStandard < 595) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 595 && dlfStandard < 707) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 707) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 311) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 311 && rweight < 392) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 392 && rweight < 488) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 488 && rweight < 595) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 595 && rweight < 707) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 707) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 290:
 
-				if (dlfStandard < 321) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 321 && dlfStandard < 404) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 404 && dlfStandard < 502) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 502 && dlfStandard < 609) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 609 && dlfStandard < 722) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 722) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 321) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 321 && rweight < 404) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 404 && rweight < 502) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 502 && rweight < 609) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 609 && rweight < 722) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 722) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 300:
 
-				if (dlfStandard < 331) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 331 && dlfStandard < 416) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 416 && dlfStandard < 514) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 514 && dlfStandard < 623) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 623 && dlfStandard < 738) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 738) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 331) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 331 && rweight < 416) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 416 && rweight < 514) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 514 && rweight < 623) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 623 && rweight < 738) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 738) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 310:
 
-				if (dlfStandard < 341) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 341 && dlfStandard < 427) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 427 && dlfStandard < 527) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 527 && dlfStandard < 637) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 637 && dlfStandard < 752) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 752) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 341) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 341 && rweight < 427) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 427 && rweight < 527) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 527 && rweight < 637) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 637 && rweight < 752) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 752) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			default:
 
-				System.out.println("\n!! Bodyweight not found within database (110-310 lbs.). Initializing averaged standards. !!");
+				Message += "\n!! Bodyweight not found within database (110-310 lbs.). Initializing averaged standards. !!";
 
-				if (dlfStandard < 173) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 173 && dlfStandard < 245) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 245 && dlfStandard < 335) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 335 && dlfStandard < 438) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 438 && dlfStandard < 550) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 550) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 173) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 173 && rweight < 245) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 245 && rweight < 335) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 335 && rweight < 438) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 438 && rweight < 550) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 550) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 		}
 	}
 
-	public void femaleDLFStandard()
+	public void femalerweight()
 	{
 		int weight = bodyweight_lbs;
 		weight = ((weight + 5) / 10) * 10; // round to nearest ten
@@ -421,326 +421,326 @@ public class DeadliftSS extends StrengthStandard
 		{
 			case 90:
 
-				if (dlfStandard < 53) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 53 && dlfStandard < 90) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 90 && dlfStandard < 139) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 139 && dlfStandard < 198) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 198 && dlfStandard < 264) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 264) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 53) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 53 && rweight < 90) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 90 && rweight < 139) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 139 && rweight < 198) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 198 && rweight < 264) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 264) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 100:
 
-				if (dlfStandard < 60) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 60 && dlfStandard < 99) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 99 && dlfStandard < 150) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 150 && dlfStandard < 211) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 211 && dlfStandard < 279) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 279) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 60) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 60 && rweight < 99) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 99 && rweight < 150) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 150 && rweight < 211) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 211 && rweight < 279) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 279) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 110:
 
-				if (dlfStandard < 67) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 67 && dlfStandard < 107) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 107 && dlfStandard < 160) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 160 && dlfStandard < 223) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 223 && dlfStandard < 293) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 293) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 67) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 67 && rweight < 107) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 107 && rweight < 160) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 160 && rweight < 223) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 223 && rweight < 293) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 293) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 120:
 
-				if (dlfStandard < 73) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 73 && dlfStandard < 115) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 115 && dlfStandard < 170) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 170 && dlfStandard < 234) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 234 && dlfStandard < 306) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 306) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 73) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 73 && rweight < 115) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 115 && rweight < 170) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 170 && rweight < 234) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 234 && rweight < 306) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 306) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 130:
 
-				if (dlfStandard < 79) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 79 && dlfStandard < 123) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 123 && dlfStandard < 179) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 179 && dlfStandard < 245) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 245 && dlfStandard < 318) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 318) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 79) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 79 && rweight < 123) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 123 && rweight < 179) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 179 && rweight < 245) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 245 && rweight < 318) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 318) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 140:
 
-				if (dlfStandard < 85) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 85 && dlfStandard < 130) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 130 && dlfStandard < 188) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 188 && dlfStandard < 255) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 255 && dlfStandard < 330) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 330) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 85) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 85 && rweight < 130) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 130 && rweight < 188) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 188 && rweight < 255) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 255 && rweight < 330) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 330) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 150:
 
-				if (dlfStandard < 91) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 91 && dlfStandard < 137) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 137 && dlfStandard < 196) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 196 && dlfStandard < 265) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 265 && dlfStandard < 341) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 341) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 91) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 91 && rweight < 137) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 137 && rweight < 196) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 196 && rweight < 265) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 265 && rweight < 341) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 341) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 160:
 
-				if (dlfStandard < 96) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 96 && dlfStandard < 144) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 144 && dlfStandard < 204) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 204 && dlfStandard < 274) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 274 && dlfStandard < 351) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 351) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 96) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 96 && rweight < 144) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 144 && rweight < 204) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 204 && rweight < 274) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 274 && rweight < 351) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 351) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 170:
 
-				if (dlfStandard < 102) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 102 && dlfStandard < 150) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 150 && dlfStandard < 212) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 212 && dlfStandard < 283) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 283 && dlfStandard < 361) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 361) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 102) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 102 && rweight < 150) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 150 && rweight < 212) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 212 && rweight < 283) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 283 && rweight < 361) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 361) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 180:
 
-				if (dlfStandard < 107) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 107 && dlfStandard < 157) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 157 && dlfStandard < 219) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 219 && dlfStandard < 292) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 292 && dlfStandard < 371) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 371) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 107) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 107 && rweight < 157) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 157 && rweight < 219) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 219 && rweight < 292) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 292 && rweight < 371) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 371) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 190:
 
-				if (dlfStandard < 112) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 112 && dlfStandard < 162) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 162 && dlfStandard < 226) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 226 && dlfStandard < 300) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 300 && dlfStandard < 380) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 380) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 112) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 112 && rweight < 162) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 162 && rweight < 226) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 226 && rweight < 300) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 300 && rweight < 380) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 380) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 200:
 
-				if (dlfStandard < 116) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 116 && dlfStandard < 168) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 168 && dlfStandard < 233) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 233 && dlfStandard < 308) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 308 && dlfStandard < 389) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 389) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 116) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 116 && rweight < 168) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 168 && rweight < 233) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 233 && rweight < 308) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 308 && rweight < 389) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 389) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 210:
 
-				if (dlfStandard < 121) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 121 && dlfStandard < 174) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 174 && dlfStandard < 239) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 239 && dlfStandard < 315) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 315 && dlfStandard < 397) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 397) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 121) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 121 && rweight < 174) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 174 && rweight < 239) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 239 && rweight < 315) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 315 && rweight < 397) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 397) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 220:
 
-				if (dlfStandard < 126) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 126 && dlfStandard < 179) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 179 && dlfStandard < 246) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 246 && dlfStandard < 322) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 322 && dlfStandard < 405) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 405) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 126) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 126 && rweight < 179) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 179 && rweight < 246) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 246 && rweight < 322) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 322 && rweight < 405) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 405) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 230:
 
-				if (dlfStandard < 130) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 130 && dlfStandard < 184) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 184 && dlfStandard < 252) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 252 && dlfStandard < 329) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 329 && dlfStandard < 413) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 413) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 130) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 130 && rweight < 184) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 184 && rweight < 252) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 252 && rweight < 329) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 329 && rweight < 413) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 413) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 240:
 
-				if (dlfStandard < 134) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 134 && dlfStandard < 190) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 190 && dlfStandard < 258) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 258 && dlfStandard < 336) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 336 && dlfStandard < 421) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 421) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 134) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 134 && rweight < 190) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 190 && rweight < 258) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 258 && rweight < 336) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 336 && rweight < 421) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 421) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 250:
 
-				if (dlfStandard < 138) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 138 && dlfStandard < 194) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 194 && dlfStandard < 263) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 263 && dlfStandard < 343) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 343 && dlfStandard < 428) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 428) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 138) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 138 && rweight < 194) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 194 && rweight < 263) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 263 && rweight < 343) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 343 && rweight < 428) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 428) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			case 260:
 
-				if (dlfStandard < 142) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 142 && dlfStandard < 199) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 199 && dlfStandard < 269) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 269 && dlfStandard < 349) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 349 && dlfStandard < 435) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 435) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 142) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 142 && rweight < 199) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 199 && rweight < 269) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 269 && rweight < 349) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 349 && rweight < 435) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 435) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 
 			default:
 
-				System.out.println("\n!! Bodyweight not found within database (110-310 lbs.). Initializing averaged standards. !!");
+				Message += "\n!! Bodyweight not found within database (110-310 lbs.). Initializing averaged standards. !!";
 
-				if (dlfStandard < 83) {
-					System.out.println("\n**You are stronger than 0% of lifters.");					
-				} else if (dlfStandard >= 83 && dlfStandard < 131) {
-					System.out.println("\n**You are stronger than 5% of lifters (BEGINNER).");
-				} else if (dlfStandard >= 131 && dlfStandard < 191) {
-					System.out.println("\n**You are stronger than 20% of lifters (NOVICE).");
-				} else if (dlfStandard >= 191 && dlfStandard < 264) {
-					System.out.println("\n**You are stronger than 50% of lifters (INTERMEDIATE).");
-				} else if (dlfStandard >= 264 && dlfStandard < 344) {
-					System.out.println("\n**You are stronger than 80% of lifters (ADVANCED).");
-				} else if (dlfStandard >= 344) {
-					System.out.println("\n**You are stronger than 95% of lifters (ELITE).");
+				if (rweight < 83) {
+					Message += "\n**You are stronger than 0% of lifters.";					
+				} else if (rweight >= 83 && rweight < 131) {
+					Message += "\n**You are stronger than 5% of lifters (BEGINNER).";
+				} else if (rweight >= 131 && rweight < 191) {
+					Message += "\n**You are stronger than 20% of lifters (NOVICE).";
+				} else if (rweight >= 191 && rweight < 264) {
+					Message += "\n**You are stronger than 50% of lifters (INTERMEDIATE).";
+				} else if (rweight >= 264 && rweight < 344) {
+					Message += "\n**You are stronger than 80% of lifters (ADVANCED).";
+				} else if (rweight >= 344) {
+					Message += "\n**You are stronger than 95% of lifters (ELITE).";
 				}
 				break;
 		}

@@ -22,12 +22,16 @@ public class UserData_Calc
 	/**Object for BMI.
 	 */
 	private BMI BMI;
-	/**Object for Lifting_Stats.
-	 */
-	private Lifting_Stats LS;
 	/**Sets the array of calculations to be accessed.
 	 */
-	private Calc_Abstract[] List_Calc = {DC, BM, FFMI, BMI, VO2_Max, LS};
+	private Barbell_Curl BC;
+	private Bench_Press BP;
+	private Deadlift DL;
+	private Shoulder_Press SP;
+	private Squat SQ;
+	private Calc_Abstract[] List_Calc = {DC, BM, FFMI, 
+		BMI, VO2_Max, BC, BP, DL, SP, SQ
+	};
 	/**An ArrayList object for all the calculations.
 	 */
 	private ArrayList<Calc_Abstract> ArrayCalc = new ArrayList<Calc_Abstract>();
@@ -41,6 +45,11 @@ public class UserData_Calc
 		VO2_Max = new VO2_Max(z);
 		BMI = new BMI(z);
 		//LS = new Lifting_Stats(z);
+		BC = new Barbell_Curl(z);
+		BP = new Bench_Press(z);
+		DL = new Deadlift(z);
+		SP = new Shoulder_Press(z);
+		SQ = new Squat(z);
 		//
 		Init_Data();
 	}
@@ -70,13 +79,23 @@ public class UserData_Calc
 	public Object GetBMI() {
 		return BMI.Result();
 	}
-	/**Returns Lifting_Stats values.
-	 */
-	/*
-	public Object GetLS() {
-		return LS.Result();
+	//
+	public Object GetBC() {
+		return BC.Result();
 	}
-	*/
+	public Object GetBP() {
+		return BP.Result();
+	}
+	public Object GetDL() {
+		return DL.Result();
+	}
+	public Object GetSP() {
+		return SP.Result();
+	}
+	public Object GetSQ() {
+		return SQ.Result();
+	}
+	//
 	/**Initializes the calculation values into #ArrayCalc.
 	 */
 	private void Init_Data() {
