@@ -1,0 +1,9 @@
+<map id="menu.Menu_Abstract.SelectMenu_Scanner" name="menu.Menu_Abstract.SelectMenu_Scanner">
+<area shape="rect" id="node1" title="Main method that takes the user input from the TUI." alt="" coords="5,51,209,92"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452_a02c5f0c8da845ac8a6d097cd055193af.html#a02c5f0c8da845ac8a6d097cd055193af" title="Clears the current screen, refresh in a sense, without building too much buffer on the screen." alt="" coords="571,5,769,47"/>
+<area shape="rect" id="node3" href="$d1/d0b/a00452_a73bfdb2c2c3f37aa17b430741a78c3d9.html#a73bfdb2c2c3f37aa17b430741a78c3d9" title="Retrieves a list of entries of #Menu_Entry for the current menu, and returns it to the user." alt="" coords="257,117,511,143"/>
+<area shape="rect" id="node7" href="$d1/d0b/a00452_a9c1a867e4888f87832ec8e69bbce73db.html#a9c1a867e4888f87832ec8e69bbce73db" title="Checks if the selected menu entry is considered valid." alt="" coords="282,51,486,92"/>
+<area shape="rect" id="node4" href="$d1/d0b/a00452_a3473045ac53247424debac2d150083f9.html#a3473045ac53247424debac2d150083f9" title="Method to retrieve the current menu&#39;s #Menu_Entry to be displayed." alt="" coords="559,96,781,137"/>
+<area shape="rect" id="node6" href="$d1/d0b/a00452_afdfa5219370c87a4aada448dc0638f54.html#afdfa5219370c87a4aada448dc0638f54" title="Returns the Menu&#39;s title." alt="" coords="559,161,781,203"/>
+<area shape="rect" id="node5" href="$de/d87/a00456_abb4e09d3e5b773819854a410a87d3e29.html#abb4e09d3e5b773819854a410a87d3e29" title="Gets the value of the Entry." alt="" coords="829,96,1031,137"/>
+</map>

@@ -53,6 +53,7 @@ public class Fitness extends Menu_Abstract
 		Editor a = new Editor();
 		UserData_Calc b = new UserData_Calc(z);
 		Lifting_Stats c = new Lifting_Stats();
+
 		switch (choice) {
 			case 1:	a.Menu_Main(z);
 				break;

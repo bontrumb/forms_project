@@ -1,0 +1,11 @@
+<map id="menu.Editor_Abstract.Menu_Main" name="menu.Editor_Abstract.Menu_Main">
+<area shape="rect" id="node1" title="Main Menu loop to access other objects." alt="" coords="5,35,247,61"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452_ac543524a227a893cdbb40f25bb9fba0c.html#ac543524a227a893cdbb40f25bb9fba0c" title="Abstract class that forces the coder to generate the current menu entries manually." alt="" coords="295,5,535,32"/>
+<area shape="rect" id="node3" href="$d1/d0b/a00452_a3ae63321b2b46536b00a5c44b3c47258.html#a3ae63321b2b46536b00a5c44b3c47258" title="Main method that takes the user input from the TUI." alt="" coords="313,57,517,98"/>
+<area shape="rect" id="node4" href="$d1/d0b/a00452_a02c5f0c8da845ac8a6d097cd055193af.html#a02c5f0c8da845ac8a6d097cd055193af" title="Clears the current screen, refresh in a sense, without building too much buffer on the screen." alt="" coords="896,11,1095,53"/>
+<area shape="rect" id="node5" href="$d1/d0b/a00452_a73bfdb2c2c3f37aa17b430741a78c3d9.html#a73bfdb2c2c3f37aa17b430741a78c3d9" title="Retrieves a list of entries of #Menu_Entry for the current menu, and returns it to the user." alt="" coords="583,123,836,149"/>
+<area shape="rect" id="node9" href="$d1/d0b/a00452_a9c1a867e4888f87832ec8e69bbce73db.html#a9c1a867e4888f87832ec8e69bbce73db" title="Checks if the selected menu entry is considered valid." alt="" coords="607,57,811,98"/>
+<area shape="rect" id="node6" href="$d1/d0b/a00452_a3473045ac53247424debac2d150083f9.html#a3473045ac53247424debac2d150083f9" title="Method to retrieve the current menu&#39;s #Menu_Entry to be displayed." alt="" coords="884,102,1107,143"/>
+<area shape="rect" id="node8" href="$d1/d0b/a00452_afdfa5219370c87a4aada448dc0638f54.html#afdfa5219370c87a4aada448dc0638f54" title="Returns the Menu&#39;s title." alt="" coords="884,167,1107,209"/>
+<area shape="rect" id="node7" href="$de/d87/a00456_abb4e09d3e5b773819854a410a87d3e29.html#abb4e09d3e5b773819854a410a87d3e29" title="Gets the value of the Entry." alt="" coords="1155,102,1356,143"/>
+</map>

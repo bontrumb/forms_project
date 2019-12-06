@@ -1,6 +1,7 @@
 package menu;
 
 import data.UserData;
+import file_io.*;
 
 /**Class that creates a Menu user interface to edit any #UserData
  * values.
@@ -21,6 +22,15 @@ public class Editor_Set extends Editor_Abstract
 	 */
 	public void SelectMenu(int choice, UserData z) {
 		String target = tools.GetType_Interactive(choice);
-		tools.Set_Interactive(target);
+		if (tools.Set_Interactive(target) && SaveProgress(z)) {
+			System.out.println("Successfully set the value");
+		}
+	}
+	private boolean SaveProgress(UserData ToUse) {
+		if (UserData_File.SaveData(ToUse)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

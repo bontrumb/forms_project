@@ -1,0 +1,15 @@
+<map id="calc.Calc_Abstract" name="calc.Calc_Abstract">
+<area shape="rect" id="node1" title="Contains abstract methods to calculate and return calculations." alt="" coords="390,409,531,589"/>
+<area shape="rect" id="node3" href="$d5/d0b/a00220.html" title="Calculates and returns Basal Metabolic values." alt="" coords="5,674,164,766"/>
+<area shape="rect" id="node4" href="$de/dc2/a00228.html" title="Calculates and returns BMI values." alt="" coords="189,674,285,766"/>
+<area shape="rect" id="node5" href="$d9/d21/a00240.html" title="Calculates and returns Display Caloric values." alt="" coords="309,674,463,766"/>
+<area shape="rect" id="node6" href="$d6/d08/a00244.html" title="Calculates and returns FFMI values." alt="" coords="487,674,583,766"/>
+<area shape="rect" id="node7" href="$dd/dd7/a00248.html" title="Calculates and returns Lifting Stats values." alt="" coords="608,637,761,803"/>
+<area shape="rect" id="node13" href="$d3/dcc/a00264.html" title="Calculates and returns VO2 Max values." alt="" coords="786,674,901,766"/>
+<area shape="rect" id="node2" href="$d9/dc5/a00480.html" title="Provides the foundational DataType and primitive methods for all various inputs." alt="" coords="405,5,516,361"/>
+<area shape="rect" id="node8" href="$d6/d43/a00216.html" title=" " alt="" coords="253,851,407,957"/>
+<area shape="rect" id="node9" href="$d5/ddf/a00224.html" title=" " alt="" coords="431,851,584,957"/>
+<area shape="rect" id="node10" href="$d7/d40/a00236.html" title=" " alt="" coords="608,851,761,957"/>
+<area shape="rect" id="node11" href="$dc/ded/a00252.html" title=" " alt="" coords="785,851,939,957"/>
+<area shape="rect" id="node12" href="$d0/def/a00256.html" title=" " alt="" coords="963,851,1116,957"/>
+</map>

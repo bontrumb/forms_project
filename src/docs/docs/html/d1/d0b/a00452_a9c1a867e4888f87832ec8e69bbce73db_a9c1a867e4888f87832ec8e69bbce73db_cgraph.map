@@ -1,0 +1,4 @@
+<map id="menu.Menu_Abstract.SelectMenu_Bool" name="menu.Menu_Abstract.SelectMenu_Bool">
+<area shape="rect" id="node1" title="Checks if the selected menu entry is considered valid." alt="" coords="5,5,209,47"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452_a02c5f0c8da845ac8a6d097cd055193af.html#a02c5f0c8da845ac8a6d097cd055193af" title="Clears the current screen, refresh in a sense, without building too much buffer on the screen." alt="" coords="257,5,456,47"/>
+</map>

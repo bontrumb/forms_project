@@ -17,4 +17,14 @@ public class Activity_Level extends SDouble
 	public Activity_Level(double o) {
 		super(o, "Activity Level", "");
 	}
+	protected boolean COT(Object o) {
+		return IsBetween1_2(heap);
+	}
+	private boolean IsBetween1_2(double o) {
+		if (o >= 1.0 && 0 <= 2.0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }

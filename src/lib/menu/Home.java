@@ -32,17 +32,5 @@ public class Home extends Menu_Abstract
 				break;
 			case 2: b.Menu_Main(z);
 		}
-		if (SaveProgress(z)) {
-			System.out.println("Saved the data..");
-		} else {
-			System.out.println("Cannot save the data...");
-		}
-	}
-	private boolean SaveProgress(UserData ToUse) {
-		if (UserData_File.SaveData(ToUse)) {
-			return true;
-		} else {
-			return false;
-		}
 	}
 }

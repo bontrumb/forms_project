@@ -37,7 +37,7 @@ public class FifthScene extends BaseScene{
 		Label FFMIL = new Label("Fat Free Mass Index: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetFFMI()));
 		Label VOL = new Label("(Not yet implemented) VO2 Max: " + getDriver().getUserdataCalc().GetVO2_Max());
 		Label bmiL = new Label("BMI: " + String.format("%.2f",(double)getDriver().getUserdataCalc().GetBMI()));
-		Label liftL = new Label("(Not yet implemented) lbs required to reach next bracket: " + getDriver().getUserdataCalc().GetLS());
+		Label liftL = new Label("(Not yet implemented) lbs required to reach next bracket: " + null);
 
 		Button quit = new Button("Quit");
 		Button back = new Button("Back");

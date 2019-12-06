@@ -1,0 +1,30 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d9/dc5/a00480.html" title="Provides the foundational DataType and primitive methods for all various inputs." alt="" coords="5,461,113,488"/>
+<area shape="rect" id="node2" href="$d0/d53/a00232.html" title="Contains abstract methods to calculate and return calculations." alt="" coords="161,157,303,184"/>
+<area shape="rect" id="node14" href="$df/d38/a00468.html" title="The class that holds Double&#45;typed data." alt="" coords="170,411,294,437"/>
+<area shape="rect" id="node19" href="$d7/db5/a00472.html" title="The class that holds Integer&#45;typed data." alt="" coords="185,537,279,564"/>
+<area shape="rect" id="node26" href="$d9/d34/a00476.html" title="The class that holds String&#45;typed data." alt="" coords="174,664,290,691"/>
+<area shape="rect" id="node3" href="$d5/d0b/a00220.html" title="Calculates and returns Basal Metabolic values." alt="" coords="351,5,509,32"/>
+<area shape="rect" id="node4" href="$de/dc2/a00228.html" title="Calculates and returns BMI values." alt="" coords="391,56,469,83"/>
+<area shape="rect" id="node5" href="$d9/d21/a00240.html" title="Calculates and returns Display Caloric values." alt="" coords="353,107,507,133"/>
+<area shape="rect" id="node6" href="$d6/d08/a00244.html" title="Calculates and returns FFMI values." alt="" coords="388,157,472,184"/>
+<area shape="rect" id="node7" href="$dd/dd7/a00248.html" title="Calculates and returns Lifting Stats values." alt="" coords="353,208,507,235"/>
+<area shape="rect" id="node13" href="$d3/dcc/a00264.html" title="Calculates and returns VO2 Max values." alt="" coords="373,259,487,285"/>
+<area shape="rect" id="node8" href="$d6/d43/a00216.html" title=" " alt="" coords="567,107,698,133"/>
+<area shape="rect" id="node9" href="$d5/ddf/a00224.html" title=" " alt="" coords="565,157,700,184"/>
+<area shape="rect" id="node10" href="$d7/d40/a00236.html" title=" " alt="" coords="581,208,684,235"/>
+<area shape="rect" id="node11" href="$dc/ded/a00252.html" title=" " alt="" coords="557,259,708,285"/>
+<area shape="rect" id="node12" href="$d0/def/a00256.html" title=" " alt="" coords="588,309,677,336"/>
+<area shape="rect" id="node15" href="$db/d12/a00268.html" title="The class that holds Activity_Level data." alt="" coords="357,309,503,336"/>
+<area shape="rect" id="node16" href="$dc/d28/a00276.html" title="The class that holds BF data." alt="" coords="394,360,466,387"/>
+<area shape="rect" id="node17" href="$da/ddc/a00288.html" title="The class that holds Height data." alt="" coords="381,411,479,437"/>
+<area shape="rect" id="node18" href="$d4/d8f/a00324.html" title=" " alt="" coords="380,461,480,488"/>
+<area shape="rect" id="node20" href="$db/d7b/a00296.html" title="The abstract class that defines the lifts, using also the Weight class as an object." alt="" coords="389,512,471,539"/>
+<area shape="rect" id="node24" href="$db/da2/a00300.html" title=" " alt="" coords="360,563,500,589"/>
+<area shape="rect" id="node25" href="$d5/d0f/a00308.html" title=" " alt="" coords="385,613,475,640"/>
+<area shape="rect" id="node21" href="$d9/dd6/a00272.html" title="The class that holds Benches data." alt="" coords="577,461,688,488"/>
+<area shape="rect" id="node22" href="$d0/dcd/a00280.html" title="The class that holds Deadlifts data." alt="" coords="576,512,689,539"/>
+<area shape="rect" id="node23" href="$d8/d17/a00304.html" title=" " alt="" coords="583,563,682,589"/>
+<area shape="rect" id="node27" href="$db/dc3/a00284.html" title="The class that holds the user&#39;s Gender." alt="" coords="379,664,481,691"/>
+<area shape="rect" id="node28" href="$d8/d0a/a00292.html" title="The class that holds the user&#39;s Info." alt="" coords="390,715,470,741"/>
+</map>

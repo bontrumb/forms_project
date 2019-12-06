@@ -1,0 +1,12 @@
+<map id="menu.Editor.SelectMenu" name="menu.Editor.SelectMenu">
+<area shape="rect" id="node1" title="Access either the #Editor_Get or #Editor_Set classes." alt="" coords="5,35,185,61"/>
+<area shape="rect" id="node2" href="$dc/df3/a00424_ab5f5c72322874d7478e833ab30bdca1c.html#ab5f5c72322874d7478e833ab30bdca1c" title="Main Menu loop to access other objects." alt="" coords="233,35,475,61"/>
+<area shape="rect" id="node3" href="$d1/d0b/a00452_ac543524a227a893cdbb40f25bb9fba0c.html#ac543524a227a893cdbb40f25bb9fba0c" title="Abstract class that forces the coder to generate the current menu entries manually." alt="" coords="523,5,763,32"/>
+<area shape="rect" id="node4" href="$d1/d0b/a00452_a3ae63321b2b46536b00a5c44b3c47258.html#a3ae63321b2b46536b00a5c44b3c47258" title="Main method that takes the user input from the TUI." alt="" coords="541,57,745,98"/>
+<area shape="rect" id="node5" href="$d1/d0b/a00452_a02c5f0c8da845ac8a6d097cd055193af.html#a02c5f0c8da845ac8a6d097cd055193af" title="Clears the current screen, refresh in a sense, without building too much buffer on the screen." alt="" coords="1124,11,1323,53"/>
+<area shape="rect" id="node6" href="$d1/d0b/a00452_a73bfdb2c2c3f37aa17b430741a78c3d9.html#a73bfdb2c2c3f37aa17b430741a78c3d9" title="Retrieves a list of entries of #Menu_Entry for the current menu, and returns it to the user." alt="" coords="811,123,1064,149"/>
+<area shape="rect" id="node10" href="$d1/d0b/a00452_a9c1a867e4888f87832ec8e69bbce73db.html#a9c1a867e4888f87832ec8e69bbce73db" title="Checks if the selected menu entry is considered valid." alt="" coords="835,57,1039,98"/>
+<area shape="rect" id="node7" href="$d1/d0b/a00452_a3473045ac53247424debac2d150083f9.html#a3473045ac53247424debac2d150083f9" title="Method to retrieve the current menu&#39;s #Menu_Entry to be displayed." alt="" coords="1112,102,1335,143"/>
+<area shape="rect" id="node9" href="$d1/d0b/a00452_afdfa5219370c87a4aada448dc0638f54.html#afdfa5219370c87a4aada448dc0638f54" title="Returns the Menu&#39;s title." alt="" coords="1112,167,1335,209"/>
+<area shape="rect" id="node8" href="$de/d87/a00456_abb4e09d3e5b773819854a410a87d3e29.html#abb4e09d3e5b773819854a410a87d3e29" title="Gets the value of the Entry." alt="" coords="1383,102,1584,143"/>
+</map>

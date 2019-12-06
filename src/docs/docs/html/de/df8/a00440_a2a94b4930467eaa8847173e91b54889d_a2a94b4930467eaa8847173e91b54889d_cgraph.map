@@ -1,0 +1,5 @@
+<map id="menu.Home.Home" name="menu.Home.Home">
+<area shape="rect" id="node1" title="Constructor that builds the Home menu interface." alt="" coords="5,46,151,73"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452_a3d6a7567cc5a7a8871dc0e7bf615ffc1.html#a3d6a7567cc5a7a8871dc0e7bf615ffc1" title="Adds #Menu_Entry to the Menu_List array." alt="" coords="199,5,424,47"/>
+<area shape="rect" id="node3" href="$d1/d0b/a00452_a02c5f0c8da845ac8a6d097cd055193af.html#a02c5f0c8da845ac8a6d097cd055193af" title="Clears the current screen, refresh in a sense, without building too much buffer on the screen." alt="" coords="212,71,411,112"/>
+</map>

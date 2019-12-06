@@ -22,6 +22,11 @@ abstract class Menu_Abstract {
 	 */
 	public Menu_Abstract(String Menu_Title) {
 		SetMenu_Title(Menu_Title);
+		MenuFlush();
+	}
+	// flush menu
+	public void MenuFlush() {
+		Menu_List = new ArrayList<Menu_Entry>();
 		AddMenu_Entry(Menu_Exit);
 	}
 	// get methods

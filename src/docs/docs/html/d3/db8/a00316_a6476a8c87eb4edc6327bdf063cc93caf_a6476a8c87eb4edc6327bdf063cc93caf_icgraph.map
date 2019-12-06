@@ -1,0 +1,6 @@
+<map id="data.UserData_Tools.Set_Interactive" name="data.UserData_Tools.Set_Interactive">
+<area shape="rect" id="node1" title=" " alt="" coords="531,23,712,65"/>
+<area shape="rect" id="node2" href="$db/db1/a00460_a86426b210e3d07cb7a44b1b38ca70832.html#a86426b210e3d07cb7a44b1b38ca70832" title=" " alt="" coords="299,5,457,32"/>
+<area shape="rect" id="node4" href="$d9/dd5/a00432_af69c25300ba247f09fe557ad11414846.html#af69c25300ba247f09fe557ad11414846" title="Takes some value that corresponds to the array index of the #UserData that should be edited." alt="" coords="273,56,483,83"/>
+<area shape="rect" id="node3" href="$d2/d9d/a00464_a95d631c627f1f25ec4d22ab8f9d9fb41.html#a95d631c627f1f25ec4d22ab8f9d9fb41" title="Abstract class that forces the coder to generate the current menu entries manually." alt="" coords="5,5,225,32"/>
+</map>

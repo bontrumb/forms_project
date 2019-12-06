@@ -9,12 +9,12 @@ public class Gender extends SString
 	/**Constructor with a null value.
 	 */
 	public Gender() {
-		super("Gender", "");
+		super("Gender", "M/F");
 	}
 	/**Constructor with a defined value.
 	 */
 	public Gender(String o) {
-		super(o, "Gender", "");
+		super(o, "Gender", "M/F");
 	}
 	// main body check
 	/**Checks whether the Gender entry is valid.

@@ -1,0 +1,4 @@
+<map id="menu.Editor" name="menu.Editor">
+<area shape="rect" id="node1" title="The main menu for choosing either to get values or set values in the main program." alt="" coords="35,307,158,413"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452.html" title="The template class that provides the skeleton menu interface." alt="" coords="5,5,188,259"/>
+</map>

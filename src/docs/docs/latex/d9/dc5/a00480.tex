@@ -1,0 +1,537 @@
+\hypertarget{a00480}{}\doxysection{structs.\+Struct Class Reference}
+\label{a00480}\index{structs.Struct@{structs.Struct}}
+
+
+Provides the foundational Data\+Type and primitive methods for all various inputs.  
+
+
+
+
+Inheritance diagram for structs.\+Struct\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d4a/a00479}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for structs.\+Struct\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{d9/dea/a00478}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} (String Type, String Units)
+\begin{DoxyCompactList}\small\item\em Constructor that provides only a null Object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00480_ac4a144981202c72fe13ca16f02b6f5cb_ac4a144981202c72fe13ca16f02b6f5cb}{Struct}} (Object Value, String Type, String Units)
+\begin{DoxyCompactList}\small\item\em Constructor that intializes \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} with a value. \end{DoxyCompactList}\item 
+Object \mbox{\hyperlink{a00480_aecaebc48fce2a78f40ed10eb7201013d_aecaebc48fce2a78f40ed10eb7201013d}{Get\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{a00480_ae7576839da2eab8ef78ec429f6fe8d28_ae7576839da2eab8ef78ec429f6fe8d28}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value of \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{a00480_a35ac14ee89113f05bdcffdc06aeddb9b_a35ac14ee89113f05bdcffdc06aeddb9b}{Get\+Units}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value of \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}}. \end{DoxyCompactList}\item 
+abstract boolean \mbox{\hyperlink{a00480_a57c7a2361d39bc6d5e0747cba5e687a6_a57c7a2361d39bc6d5e0747cba5e687a6}{SE}} (Object o)
+\begin{DoxyCompactList}\small\item\em Abstract Method to check whether a value to be entered is valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df}{Set\+Entry}} (Object o)
+\begin{DoxyCompactList}\small\item\em Sets the value of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. \end{DoxyCompactList}\item 
+abstract boolean \mbox{\hyperlink{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}{CC}} (Object o)
+\begin{DoxyCompactList}\small\item\em Provides a method to return a boolean whether an object can be set via \mbox{\hyperlink{a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df}{Set\+Entry}} under various conditions. \end{DoxyCompactList}\item 
+abstract boolean \mbox{\hyperlink{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}{CT}} (Object o)
+\begin{DoxyCompactList}\small\item\em Provides a method to return a boolean whether the object passes the basic type test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}{C\+OT}} (Object o)
+\begin{DoxyCompactList}\small\item\em Provides a method to return whether the object\textquotesingle{}s type is valid to be inputted into. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{a00480_a875d2e66de083b62caea4b6003e65ec2_a875d2e66de083b62caea4b6003e65ec2}{Is\+Positive}} (double o)
+\begin{DoxyCompactList}\small\item\em Checks if object is Positive or is 0. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{a00480_a13506d715f36cd274347a049ddcef8ce_a13506d715f36cd274347a049ddcef8ce}{Is0\+\_\+1}} (double o)
+\begin{DoxyCompactList}\small\item\em Checks if object is between 0 and 1 inclusive. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{a00480_ae8ff6cf95d14cbeaf182aa835438e2a3_ae8ff6cf95d14cbeaf182aa835438e2a3}{Is\+Not0}} (double o)
+\begin{DoxyCompactList}\small\item\em Checks if object is not 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7}{Get\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value of \mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00480_a7a42c28cc5f8efe89ec2447db3c663a6_a7a42c28cc5f8efe89ec2447db3c663a6}{Set\+Type}} (String Type)
+\begin{DoxyCompactList}\small\item\em Sets the type of \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00480_ab6e4891cd5e2b0dd59b01e257414c8aa_ab6e4891cd5e2b0dd59b01e257414c8aa}{Set\+Units}} (String Units)
+\begin{DoxyCompactList}\small\item\em Sets the units of \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00480_abd52128b8300ea1c3149176f3422ebac_abd52128b8300ea1c3149176f3422ebac}{Set\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Sets \mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}} to true upon the constructor\textquotesingle{}s initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}} = null
+\begin{DoxyCompactList}\small\item\em Stores various forms of data. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Stores the type of data of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Stores the units of the data of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}} = false
+\begin{DoxyCompactList}\small\item\em Locks \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} and \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} from modification after initialization of \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides the foundational Data\+Type and primitive methods for all various inputs. 
+
+Includes get, set, and check methods for its objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}\label{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}} 
+\index{structs.Struct@{structs.Struct}!Struct@{Struct}}
+\index{Struct@{Struct}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct()}{Struct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily structs.\+Struct.\+Struct (\begin{DoxyParamCaption}\item[{String}]{Type,  }\item[{String}]{Units }\end{DoxyParamCaption})}
+
+
+
+Constructor that provides only a null Object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The type of object. \\
+\hline
+{\em Value} & How the object is measured. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_ac4a144981202c72fe13ca16f02b6f5cb_ac4a144981202c72fe13ca16f02b6f5cb}\label{a00480_ac4a144981202c72fe13ca16f02b6f5cb_ac4a144981202c72fe13ca16f02b6f5cb}} 
+\index{structs.Struct@{structs.Struct}!Struct@{Struct}}
+\index{Struct@{Struct}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct()}{Struct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily structs.\+Struct.\+Struct (\begin{DoxyParamCaption}\item[{Object}]{Value,  }\item[{String}]{Type,  }\item[{String}]{Units }\end{DoxyParamCaption})}
+
+
+
+Constructor that intializes \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} with a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & The value of the object. \\
+\hline
+{\em Type} & The type of object. \\
+\hline
+{\em Units} & How the object is measured. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_ac4a144981202c72fe13ca16f02b6f5cb_ac4a144981202c72fe13ca16f02b6f5cb_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}\label{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}} 
+\index{structs.Struct@{structs.Struct}!CC@{CC}}
+\index{CC@{CC}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{CC()}{CC()}}
+{\footnotesize\ttfamily abstract boolean structs.\+Struct.\+CC (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Provides a method to return a boolean whether an object can be set via \mbox{\hyperlink{a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df}{Set\+Entry}} under various conditions. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}{CC}} 
+
+\mbox{\hyperlink{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}{CT}} 
+
+\mbox{\hyperlink{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}{C\+OT}} ~\newline
+ 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{a00232_a497a8cb4c2d810f97390865710c070b4_a497a8cb4c2d810f97390865710c070b4}{calc.\+Calc\+\_\+\+Abstract}}, \mbox{\hyperlink{a00472_a3992cace0c720ade56289b41800dfe68_a3992cace0c720ade56289b41800dfe68}{structs.\+S\+Int}}, \mbox{\hyperlink{a00476_a6b2ba9da845509affb1366af4c126af9_a6b2ba9da845509affb1366af4c126af9}{structs.\+S\+String}}, and \mbox{\hyperlink{a00468_a2887fb3e3f472a66303e4cec25ff2b6e_a2887fb3e3f472a66303e4cec25ff2b6e}{structs.\+S\+Double}}.
+
+\mbox{\Hypertarget{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}\label{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}} 
+\index{structs.Struct@{structs.Struct}!COT@{COT}}
+\index{COT@{COT}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{COT()}{COT()}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+C\+OT (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Provides a method to return whether the object\textquotesingle{}s type is valid to be inputted into. 
+
+E.\+g. String cannot go into Double, and vice versa, so it returns false.
+
+\begin{DoxyNote}{Note}
+Lossy type casting may be encountered from Double to Integer. 
+
+Lossless type casting may be encountered from Integer to Double. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to be inspected on other conditions. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{a00284_a48f767eed51a58fe4a730e95a83fad09_a48f767eed51a58fe4a730e95a83fad09}{data.\+Gender}}, and \mbox{\hyperlink{a00268_a06ea547c8f0306a1a5888bbf228df825_a06ea547c8f0306a1a5888bbf228df825}{data.\+Activity\+\_\+\+Level}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}\label{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}} 
+\index{structs.Struct@{structs.Struct}!CT@{CT}}
+\index{CT@{CT}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{CT()}{CT()}}
+{\footnotesize\ttfamily abstract boolean structs.\+Struct.\+CT (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Provides a method to return a boolean whether the object passes the basic type test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to be inspected on. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{a00232_abd04982eecd78267f2456635fc50b8c9_abd04982eecd78267f2456635fc50b8c9}{calc.\+Calc\+\_\+\+Abstract}}, \mbox{\hyperlink{a00472_a315e06b984d018663c1028faa856c5c8_a315e06b984d018663c1028faa856c5c8}{structs.\+S\+Int}}, \mbox{\hyperlink{a00476_a3c25f3ddb0257d3cf719ad14790e1a71_a3c25f3ddb0257d3cf719ad14790e1a71}{structs.\+S\+String}}, and \mbox{\hyperlink{a00468_aed9bf704b958411f5d64df1bd13e84e1_aed9bf704b958411f5d64df1bd13e84e1}{structs.\+S\+Double}}.
+
+\mbox{\Hypertarget{a00480_aecaebc48fce2a78f40ed10eb7201013d_aecaebc48fce2a78f40ed10eb7201013d}\label{a00480_aecaebc48fce2a78f40ed10eb7201013d_aecaebc48fce2a78f40ed10eb7201013d}} 
+\index{structs.Struct@{structs.Struct}!GetEntry@{GetEntry}}
+\index{GetEntry@{GetEntry}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{GetEntry()}{GetEntry()}}
+{\footnotesize\ttfamily Object structs.\+Struct.\+Get\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_aecaebc48fce2a78f40ed10eb7201013d_aecaebc48fce2a78f40ed10eb7201013d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7}\label{a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7}} 
+\index{structs.Struct@{structs.Struct}!GetLock@{GetLock}}
+\index{GetLock@{GetLock}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{GetLock()}{GetLock()}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+Get\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets the value of \mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}}. 
+
+Used for confirming that there is no modification to the \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} and \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} once \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} has been initialized. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_ae7576839da2eab8ef78ec429f6fe8d28_ae7576839da2eab8ef78ec429f6fe8d28}\label{a00480_ae7576839da2eab8ef78ec429f6fe8d28_ae7576839da2eab8ef78ec429f6fe8d28}} 
+\index{structs.Struct@{structs.Struct}!GetType@{GetType}}
+\index{GetType@{GetType}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily String structs.\+Struct.\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_ae7576839da2eab8ef78ec429f6fe8d28_ae7576839da2eab8ef78ec429f6fe8d28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_a35ac14ee89113f05bdcffdc06aeddb9b_a35ac14ee89113f05bdcffdc06aeddb9b}\label{a00480_a35ac14ee89113f05bdcffdc06aeddb9b_a35ac14ee89113f05bdcffdc06aeddb9b}} 
+\index{structs.Struct@{structs.Struct}!GetUnits@{GetUnits}}
+\index{GetUnits@{GetUnits}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{GetUnits()}{GetUnits()}}
+{\footnotesize\ttfamily String structs.\+Struct.\+Get\+Units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a35ac14ee89113f05bdcffdc06aeddb9b_a35ac14ee89113f05bdcffdc06aeddb9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_a13506d715f36cd274347a049ddcef8ce_a13506d715f36cd274347a049ddcef8ce}\label{a00480_a13506d715f36cd274347a049ddcef8ce_a13506d715f36cd274347a049ddcef8ce}} 
+\index{structs.Struct@{structs.Struct}!Is0\_1@{Is0\_1}}
+\index{Is0\_1@{Is0\_1}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Is0\_1()}{Is0\_1()}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+Is0\+\_\+1 (\begin{DoxyParamCaption}\item[{double}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Checks if object is between 0 and 1 inclusive. 
+
+This assumes that the object is a double. 
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to check. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00480_ae8ff6cf95d14cbeaf182aa835438e2a3_ae8ff6cf95d14cbeaf182aa835438e2a3}\label{a00480_ae8ff6cf95d14cbeaf182aa835438e2a3_ae8ff6cf95d14cbeaf182aa835438e2a3}} 
+\index{structs.Struct@{structs.Struct}!IsNot0@{IsNot0}}
+\index{IsNot0@{IsNot0}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{IsNot0()}{IsNot0()}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+Is\+Not0 (\begin{DoxyParamCaption}\item[{double}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Checks if object is not 0. 
+
+Typically used in conjunction with \mbox{\hyperlink{a00480_a875d2e66de083b62caea4b6003e65ec2_a875d2e66de083b62caea4b6003e65ec2}{Is\+Positive}} and/or \mbox{\hyperlink{a00480_a13506d715f36cd274347a049ddcef8ce_a13506d715f36cd274347a049ddcef8ce}{Is0\+\_\+1}}. 
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to check. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00480_a875d2e66de083b62caea4b6003e65ec2_a875d2e66de083b62caea4b6003e65ec2}\label{a00480_a875d2e66de083b62caea4b6003e65ec2_a875d2e66de083b62caea4b6003e65ec2}} 
+\index{structs.Struct@{structs.Struct}!IsPositive@{IsPositive}}
+\index{IsPositive@{IsPositive}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{IsPositive()}{IsPositive()}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+Is\+Positive (\begin{DoxyParamCaption}\item[{double}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Checks if object is Positive or is 0. 
+
+This assumes that the object is a double. 
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to check. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a875d2e66de083b62caea4b6003e65ec2_a875d2e66de083b62caea4b6003e65ec2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_a57c7a2361d39bc6d5e0747cba5e687a6_a57c7a2361d39bc6d5e0747cba5e687a6}\label{a00480_a57c7a2361d39bc6d5e0747cba5e687a6_a57c7a2361d39bc6d5e0747cba5e687a6}} 
+\index{structs.Struct@{structs.Struct}!SE@{SE}}
+\index{SE@{SE}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{SE()}{SE()}}
+{\footnotesize\ttfamily abstract boolean structs.\+Struct.\+SE (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Abstract Method to check whether a value to be entered is valid. 
+
+Calls \mbox{\hyperlink{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}{CC}}, \mbox{\hyperlink{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}{C\+OT}}, and \mbox{\hyperlink{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}{CT}} methods to check if the object is valid for entry. 
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to be inputted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{a00480_a63dd43fdb3b69037586ae4e4d13cd63e_a63dd43fdb3b69037586ae4e4d13cd63e}{CC}}, \mbox{\hyperlink{a00480_af337504a3dc1f500f22e5612f3554fe3_af337504a3dc1f500f22e5612f3554fe3}{C\+OT}}, \mbox{\hyperlink{a00480_aa6461b1ba0cb4d549ce245cc46fbca0f_aa6461b1ba0cb4d549ce245cc46fbca0f}{CT}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{a00232_a0c1e6565b9e931a96030e67f56756923_a0c1e6565b9e931a96030e67f56756923}{calc.\+Calc\+\_\+\+Abstract}}, \mbox{\hyperlink{a00472_acb6abc4e8db4cb932586da502d9829b3_acb6abc4e8db4cb932586da502d9829b3}{structs.\+S\+Int}}, \mbox{\hyperlink{a00476_a0de278026510cb79c0f2ffcc3989f598_a0de278026510cb79c0f2ffcc3989f598}{structs.\+S\+String}}, and \mbox{\hyperlink{a00468_a2c92a84bdfaa0f23dc2eb3c621743c82_a2c92a84bdfaa0f23dc2eb3c621743c82}{structs.\+S\+Double}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a57c7a2361d39bc6d5e0747cba5e687a6_a57c7a2361d39bc6d5e0747cba5e687a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df}\label{a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df}} 
+\index{structs.Struct@{structs.Struct}!SetEntry@{SetEntry}}
+\index{SetEntry@{SetEntry}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{SetEntry()}{SetEntry()}}
+{\footnotesize\ttfamily void structs.\+Struct.\+Set\+Entry (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})}
+
+
+
+Sets the value of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Object to be inputted. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_af8b5a2a647b986955c82a67798e683df_af8b5a2a647b986955c82a67798e683df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_abd52128b8300ea1c3149176f3422ebac_abd52128b8300ea1c3149176f3422ebac}\label{a00480_abd52128b8300ea1c3149176f3422ebac_abd52128b8300ea1c3149176f3422ebac}} 
+\index{structs.Struct@{structs.Struct}!SetLock@{SetLock}}
+\index{SetLock@{SetLock}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{SetLock()}{SetLock()}}
+{\footnotesize\ttfamily void structs.\+Struct.\+Set\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets \mbox{\hyperlink{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}{Struct\+\_\+\+Lock}} to true upon the constructor\textquotesingle{}s initialization. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_abd52128b8300ea1c3149176f3422ebac_abd52128b8300ea1c3149176f3422ebac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_a7a42c28cc5f8efe89ec2447db3c663a6_a7a42c28cc5f8efe89ec2447db3c663a6}\label{a00480_a7a42c28cc5f8efe89ec2447db3c663a6_a7a42c28cc5f8efe89ec2447db3c663a6}} 
+\index{structs.Struct@{structs.Struct}!SetType@{SetType}}
+\index{SetType@{SetType}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void structs.\+Struct.\+Set\+Type (\begin{DoxyParamCaption}\item[{String}]{Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the type of \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}}. 
+
+Function does not change \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} after \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} has been initialized. This is made possible by calling \mbox{\hyperlink{a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7}{Get\+Lock}}. 
+\begin{DoxyParams}{Parameters}
+{\em Type} & The value of \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}}. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a7a42c28cc5f8efe89ec2447db3c663a6_a7a42c28cc5f8efe89ec2447db3c663a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_a7a42c28cc5f8efe89ec2447db3c663a6_a7a42c28cc5f8efe89ec2447db3c663a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00480_ab6e4891cd5e2b0dd59b01e257414c8aa_ab6e4891cd5e2b0dd59b01e257414c8aa}\label{a00480_ab6e4891cd5e2b0dd59b01e257414c8aa_ab6e4891cd5e2b0dd59b01e257414c8aa}} 
+\index{structs.Struct@{structs.Struct}!SetUnits@{SetUnits}}
+\index{SetUnits@{SetUnits}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{SetUnits()}{SetUnits()}}
+{\footnotesize\ttfamily void structs.\+Struct.\+Set\+Units (\begin{DoxyParamCaption}\item[{String}]{Units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the units of \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}}. 
+
+Function does not change \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} after \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}} has been initialized. This is made possible by calling \mbox{\hyperlink{a00480_a658c38b084efbe2f1e4badb4bd294de7_a658c38b084efbe2f1e4badb4bd294de7}{Get\+Lock}}. 
+\begin{DoxyParams}{Parameters}
+{\em Units} & The value of \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_ab6e4891cd5e2b0dd59b01e257414c8aa_ab6e4891cd5e2b0dd59b01e257414c8aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc5/a00480_ab6e4891cd5e2b0dd59b01e257414c8aa_ab6e4891cd5e2b0dd59b01e257414c8aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}\label{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}} 
+\index{structs.Struct@{structs.Struct}!Struct\_Entry@{Struct\_Entry}}
+\index{Struct\_Entry@{Struct\_Entry}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct\_Entry}{Struct\_Entry}}
+{\footnotesize\ttfamily Object structs.\+Struct.\+Struct\+\_\+\+Entry = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores various forms of data. 
+
+\mbox{\Hypertarget{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}\label{a00480_ab6fd63a06d77c89c3412bb72c0275ca2_ab6fd63a06d77c89c3412bb72c0275ca2}} 
+\index{structs.Struct@{structs.Struct}!Struct\_Lock@{Struct\_Lock}}
+\index{Struct\_Lock@{Struct\_Lock}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct\_Lock}{Struct\_Lock}}
+{\footnotesize\ttfamily boolean structs.\+Struct.\+Struct\+\_\+\+Lock = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Locks \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} and \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} from modification after initialization of \mbox{\hyperlink{a00480_aab8940ea51da0794daefcf412f921881_aab8940ea51da0794daefcf412f921881}{Struct}}. 
+
+\mbox{\Hypertarget{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}\label{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}} 
+\index{structs.Struct@{structs.Struct}!Struct\_Type@{Struct\_Type}}
+\index{Struct\_Type@{Struct\_Type}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct\_Type}{Struct\_Type}}
+{\footnotesize\ttfamily String structs.\+Struct.\+Struct\+\_\+\+Type = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores the type of data of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. 
+
+E.\+g. Weight, Height, etc. \mbox{\Hypertarget{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}\label{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}} 
+\index{structs.Struct@{structs.Struct}!Struct\_Units@{Struct\_Units}}
+\index{Struct\_Units@{Struct\_Units}!structs.Struct@{structs.Struct}}
+\doxysubsubsection{\texorpdfstring{Struct\_Units}{Struct\_Units}}
+{\footnotesize\ttfamily String structs.\+Struct.\+Struct\+\_\+\+Units = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores the units of the data of \mbox{\hyperlink{a00480_ab302a84e17b89dba579eab0d87b15ed0_ab302a84e17b89dba579eab0d87b15ed0}{Struct\+\_\+\+Entry}}. 
+
+E.\+g. If \mbox{\hyperlink{a00480_a237d1618fa0f01c193c54d757821216e_a237d1618fa0f01c193c54d757821216e}{Struct\+\_\+\+Type}} is Weight, then \mbox{\hyperlink{a00480_a7a2ed5485eada870932d0e086998f9cb_a7a2ed5485eada870932d0e086998f9cb}{Struct\+\_\+\+Units}} is lbs. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jamie/java/forms\+\_\+project/src/lib/structs/\mbox{\hyperlink{a00200}{Struct.\+java}}\end{DoxyCompactItemize}

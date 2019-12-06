@@ -1,0 +1,7 @@
+<map id="structs.SDouble.SE" name="structs.SDouble.SE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$df/d38/a00468_a2887fb3e3f472a66303e4cec25ff2b6e.html#a2887fb3e3f472a66303e4cec25ff2b6e" title="Returns whether the object is positive or not." alt="" coords="197,5,344,32"/>
+<area shape="rect" id="node4" href="$d9/dc5/a00480_af337504a3dc1f500f22e5612f3554fe3.html#af337504a3dc1f500f22e5612f3554fe3" title="Provides a method to return whether the object&#39;s type is valid to be inputted into." alt="" coords="201,56,340,83"/>
+<area shape="rect" id="node5" href="$df/d38/a00468_aed9bf704b958411f5d64df1bd13e84e1.html#aed9bf704b958411f5d64df1bd13e84e1" title="Returns whether an object is a double or not." alt="" coords="198,107,343,133"/>
+<area shape="rect" id="node3" href="$d9/dc5/a00480_a875d2e66de083b62caea4b6003e65ec2.html#a875d2e66de083b62caea4b6003e65ec2" title="Checks if object is Positive or is 0." alt="" coords="392,5,567,32"/>
+</map>

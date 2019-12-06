@@ -91,7 +91,7 @@ public class UserData
 	}
 
 	// set methods main
-	public void SetEntry(int choice) {
+	public boolean SetEntry(int choice) {
 		Struct s = GetData_Var(choice);
 		while (true) {
 			System.out.println("Enter a value for " + s.GetType() + 
@@ -102,8 +102,10 @@ public class UserData
 				break;
 			} else {
 				System.out.println("Invalid input");
+				scan.nextLine();
 			}
 		}
+		return true;
 	}
 
 	public boolean SetEntry_Direct(int choice, Object value) {

@@ -1,0 +1,6 @@
+<map id="data.UserData_Tools.GetType_Interactive" name="data.UserData_Tools.GetType_Interactive">
+<area shape="rect" id="node1" title=" " alt="" coords="521,35,735,76"/>
+<area shape="rect" id="node2" href="$d4/dd3/a00428_a709431b520b4c1706384176cb6e17dae.html#a709431b520b4c1706384176cb6e17dae" title="Method to display the #UserData&#39;s values selected from the index chosen." alt="" coords="274,5,463,47"/>
+<area shape="rect" id="node4" href="$d9/dd5/a00432_af69c25300ba247f09fe557ad11414846.html#af69c25300ba247f09fe557ad11414846" title="Takes some value that corresponds to the array index of the #UserData that should be edited." alt="" coords="264,71,473,98"/>
+<area shape="rect" id="node3" href="$d4/dd3/a00428_a997e2bc4f30ed6f4f6d4168bf6d4d6f5.html#a997e2bc4f30ed6f4f6d4168bf6d4d6f5" title="Shows user value when some choice is selected." alt="" coords="5,13,216,39"/>
+</map>

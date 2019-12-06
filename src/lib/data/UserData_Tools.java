@@ -67,9 +67,9 @@ public class UserData_Tools {
 		}
 	}
 	
-	public void Set_Interactive(String target) {
+	public boolean Set_Interactive(String target) {
 		int i = SearchData_Type(target);
-		z.SetEntry(i);
+		return z.SetEntry(i);
 	}
 
 	// search function

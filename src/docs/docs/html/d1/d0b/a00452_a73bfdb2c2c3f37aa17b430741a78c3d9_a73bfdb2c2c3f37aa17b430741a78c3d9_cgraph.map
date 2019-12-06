@@ -1,0 +1,6 @@
+<map id="menu.Menu_Abstract.GetMenu_List" name="menu.Menu_Abstract.GetMenu_List">
+<area shape="rect" id="node1" title="Retrieves a list of entries of #Menu_Entry for the current menu, and returns it to the user." alt="" coords="5,46,259,73"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00452_a3473045ac53247424debac2d150083f9.html#a3473045ac53247424debac2d150083f9" title="Method to retrieve the current menu&#39;s #Menu_Entry to be displayed." alt="" coords="307,5,529,47"/>
+<area shape="rect" id="node4" href="$d1/d0b/a00452_afdfa5219370c87a4aada448dc0638f54.html#afdfa5219370c87a4aada448dc0638f54" title="Returns the Menu&#39;s title." alt="" coords="307,71,529,112"/>
+<area shape="rect" id="node3" href="$de/d87/a00456_abb4e09d3e5b773819854a410a87d3e29.html#abb4e09d3e5b773819854a410a87d3e29" title="Gets the value of the Entry." alt="" coords="577,5,779,47"/>
+</map>
