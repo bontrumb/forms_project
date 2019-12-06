@@ -1,6 +1,0 @@
-<map id="structs.Struct.GetLock" name="structs.Struct.GetLock">
-<area shape="rect" id="node1" title="Gets the value of Struct_Lock." alt="" coords="419,31,584,57"/>
-<area shape="rect" id="node2" href="$d9/dc5/a00480_a7a42c28cc5f8efe89ec2447db3c663a6.html#a7a42c28cc5f8efe89ec2447db3c663a6" title="Sets the type of Struct_Type." alt="" coords="206,5,369,32"/>
-<area shape="rect" id="node4" href="$d9/dc5/a00480_ab6e4891cd5e2b0dd59b01e257414c8aa.html#ab6e4891cd5e2b0dd59b01e257414c8aa" title="Sets the units of Struct_Units." alt="" coords="204,56,371,83"/>
-<area shape="rect" id="node3" href="$d9/dc5/a00480_aab8940ea51da0794daefcf412f921881.html#aab8940ea51da0794daefcf412f921881" title="Constructor that provides only a null Object." alt="" coords="5,31,156,57"/>
-</map>

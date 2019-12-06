@@ -1,7 +1,0 @@
-<map id="menu.Home" name="menu.Home">
-<area shape="rect" id="node1" title="The Home Menu interface." alt="" coords="160,573,289,680"/>
-<area shape="rect" id="node2" href="$d1/d0b/a00452.html" title="The template class that provides the skeleton menu interface." alt="" coords="64,300,247,524"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,145,177,237"/>
-<area shape="rect" id="node4" title=" " alt="" coords="51,5,131,83"/>
-<area shape="rect" id="node5" href="$de/d87/a00456.html" title="Class that provides the entry data structure." alt="" coords="211,145,358,237"/>
-</map>

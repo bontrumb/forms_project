@@ -1,5 +1,0 @@
-<map id="calc.Basal_Metabolic" name="calc.Basal_Metabolic">
-<area shape="rect" id="node1" title="Calculates and returns Basal Metabolic values." alt="" coords="5,637,164,729"/>
-<area shape="rect" id="node2" href="$d0/d53/a00232.html" title="Contains abstract methods to calculate and return calculations." alt="" coords="14,409,155,589"/>
-<area shape="rect" id="node3" href="$d9/dc5/a00480.html" title="Provides the foundational DataType and primitive methods for all various inputs." alt="" coords="29,5,140,361"/>
-</map>

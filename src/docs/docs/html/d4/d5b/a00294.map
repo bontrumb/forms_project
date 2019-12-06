@@ -1,7 +1,0 @@
-<map id="data.Lifts" name="data.Lifts">
-<area shape="rect" id="node1" title="The abstract class that defines the lifts, using also the Weight class as an object." alt="" coords="5,885,155,1036"/>
-<area shape="rect" id="node2" href="$d7/db5/a00472.html" title="The class that holds Integer&#45;typed data." alt="" coords="6,571,101,707"/>
-<area shape="rect" id="node3" href="$d9/dc5/a00480.html" title="Provides the foundational DataType and primitive methods for all various inputs." alt="" coords="11,5,122,361"/>
-<area shape="rect" id="node5" href="$df/d38/a00468.html" title="The class that holds Double&#45;typed data." alt="" coords="89,411,213,547"/>
-<area shape="rect" id="node4" href="$d4/d8f/a00324.html" title=" " alt="" coords="98,731,198,823"/>
-</map>

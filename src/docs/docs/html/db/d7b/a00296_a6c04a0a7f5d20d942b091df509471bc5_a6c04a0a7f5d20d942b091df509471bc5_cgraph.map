@@ -1,4 +1,0 @@
-<map id="data.Lifts.GetWeight" name="data.Lifts.GetWeight">
-<area shape="rect" id="node1" title="Gets the double value of the weight used for the exercise." alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" href="$d9/dc5/a00480_aecaebc48fce2a78f40ed10eb7201013d.html#aecaebc48fce2a78f40ed10eb7201013d" title="Gets the value of Struct_Entry." alt="" coords="208,5,377,32"/>
-</map>

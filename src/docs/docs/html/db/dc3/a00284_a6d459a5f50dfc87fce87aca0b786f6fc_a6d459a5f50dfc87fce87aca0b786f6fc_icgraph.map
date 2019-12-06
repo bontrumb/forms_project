@@ -1,4 +1,0 @@
-<map id="data.Gender.G1" name="data.Gender.G1">
-<area shape="rect" id="node1" title="Checks whether the Gender is male or female, or returns false if invalid." alt="" coords="185,5,308,32"/>
-<area shape="rect" id="node2" href="$db/dc3/a00284_a48f767eed51a58fe4a730e95a83fad09.html#a48f767eed51a58fe4a730e95a83fad09" title="Checks whether the Gender entry is valid." alt="" coords="5,5,137,32"/>
-</map>

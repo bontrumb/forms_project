@@ -1,4 +1,0 @@
-<map id="menu.Editor_Abstract.Menu_Main" name="menu.Editor_Abstract.Menu_Main">
-<area shape="rect" id="node1" title="Main Menu loop to access other objects." alt="" coords="233,5,475,32"/>
-<area shape="rect" id="node2" href="$db/d4f/a00420_a4df1ccb44f64b2eb1d80d92274fb6587.html#a4df1ccb44f64b2eb1d80d92274fb6587" title="Access either the #Editor_Get or #Editor_Set classes." alt="" coords="5,5,185,32"/>
-</map>

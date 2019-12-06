@@ -1,5 +1,0 @@
-<map id="menu.Editor_Set" name="menu.Editor_Set">
-<area shape="rect" id="node1" title="Class that creates a Menu user interface to edit any #UserData values." alt="" coords="32,447,161,539"/>
-<area shape="rect" id="node2" href="$dc/df3/a00424.html" title="This class extends the abstract class Menu_Abstract, which provides the structure for editing and vie..." alt="" coords="15,307,178,399"/>
-<area shape="rect" id="node3" href="$d1/d0b/a00452.html" title="The template class that provides the skeleton menu interface." alt="" coords="5,5,188,259"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="structs.SInt.SE" name="structs.SInt.SE">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,120,83"/>
-<area shape="rect" id="node2" href="$d7/db5/a00472_a3992cace0c720ade56289b41800dfe68.html#a3992cace0c720ade56289b41800dfe68" title="Returns whether the object is positive or not." alt="" coords="179,5,296,32"/>
-<area shape="rect" id="node4" href="$d9/dc5/a00480_af337504a3dc1f500f22e5612f3554fe3.html#af337504a3dc1f500f22e5612f3554fe3" title="Provides a method to return whether the object&#39;s type is valid to be inputted into." alt="" coords="168,56,307,83"/>
-<area shape="rect" id="node5" href="$d7/db5/a00472_a315e06b984d018663c1028faa856c5c8.html#a315e06b984d018663c1028faa856c5c8" title="Returns whether an object is an integer or not." alt="" coords="179,107,295,133"/>
-<area shape="rect" id="node3" href="$d9/dc5/a00480_a875d2e66de083b62caea4b6003e65ec2.html#a875d2e66de083b62caea4b6003e65ec2" title="Checks if object is Positive or is 0." alt="" coords="355,5,529,32"/>
-</map>
