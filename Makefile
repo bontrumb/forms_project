@@ -1,6 +1,6 @@
 GCC=/user/bin/gcc
-JAVAC=/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/javac
-JAVAE=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/bin/java
+JAVAC=/usr/bin/javac
+JAVAE=/usr/bin/java
 CFLAGS=-Wall -Werror
 JCFLAGS=-Werror -g
 DIRS=bin docs lib
