@@ -38,7 +38,7 @@ public class Fitness extends Menu_Abstract
 		AddMenu_Entry(Display_Caloric);
 		AddMenu_Entry(Basal_Metabolic);
 	       	AddMenu_Entry(FFMI);
-		AddMenu_Entry(VO2_Max);
+		//AddMenu_Entry(VO2_Max);
 		AddMenu_Entry(BMI);
 		AddMenu_Entry(Lifting_Stats);
 	}
@@ -63,11 +63,12 @@ public class Fitness extends Menu_Abstract
 				break;
 			case 4:	System.out.println(b.GetFFMI());
 				break;
-			case 5: System.out.println(b.GetVO2_Max());
+			/*case 5: System.out.println(b.GetVO2_Max());
 				break;
-			case 6: System.out.println(b.GetBMI());
+			*/
+			case 5: System.out.println(b.GetBMI());
 				break;
-			case 7: c.Menu_Main(z);
+			case 6: c.Menu_Main(z);
 				break;
 		}
 	}

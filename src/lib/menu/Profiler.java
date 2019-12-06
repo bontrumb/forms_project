@@ -1,6 +1,7 @@
 package menu;
 import data.UserData;
 import data.UserData_Tools;
+import file_io.UserData_File;
 import static menu.Menu_Abstract.ClearScreen;
 public class Profiler
 {
@@ -11,5 +12,6 @@ public class Profiler
 		use.Set_Interactive("Weight");
 		use.Set_Interactive("Height");
 		ClearScreen();
+		UserData_File.SaveData(NewUser);
 	}
 }

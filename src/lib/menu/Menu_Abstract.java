@@ -5,6 +5,7 @@ import data.UserData;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.InputMismatchException;
+import file_io.UserData_File;
 /**The template class that provides the skeleton menu interface.
  */
 abstract class Menu_Abstract {
@@ -132,6 +133,7 @@ abstract class Menu_Abstract {
 	       int choice = -1;
 	       while (choice != 0) {
 		       choice = SelectMenu_Scanner();
+		       UserData_File.SaveData(z);
 		       SelectMenu(choice, z);
 	       }
 	}

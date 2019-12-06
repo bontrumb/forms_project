@@ -8,7 +8,7 @@ Home.class	: Fitness.class Menu_Abstract.class
 Profiler.class	: UserData.class UserData_Tools.class
 Fitness.class	: UserData.class UserData_Calc.class Menu_Abstract.class Editor.class Lifting_Stats.class
 Editor.class : Editor_Set.class Editor_Get.class
-Editor_Set.class Editor_Get.class	: Editor_Abstract.class
+Editor_Set.class Editor_Get.class	: Editor_Abstract.class UserData_File.class
 Editor_Abstract.class	: Menu_Abstract.class
 Menu_Abstract.class	: Menu_Entry.class
 %.class	: %.java

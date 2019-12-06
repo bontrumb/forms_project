@@ -1,5 +1,8 @@
 package data;
 
+import structs.*;
+import java.util.ArrayList;
+
 public class UserData_Tools {
 	private UserData z;
 	public UserData_Tools(UserData z) {
@@ -15,8 +18,18 @@ public class UserData_Tools {
 		return obj;
 	}
 
+	public ArrayList<Struct> GetData() {
+		return this.z.GetData();
+	}
 	public Object GetDataEntry(UserDataIndex index){
 		return z.GetData_Var(index.getIndex()).GetEntry();
+	}
+	public ArrayList<String> GetTypeList() {
+		ArrayList<String> temp = new ArrayList<String>();
+		for (Struct o : GetData()) {
+			temp.add(o.GetType());
+		}
+		return temp;
 	}
 
 	public String GetType(String target) {

@@ -135,4 +135,3 @@ public class UserData
 		this.UserNew = true;
 	}
 }
-

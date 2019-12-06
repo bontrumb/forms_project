@@ -1,6 +1,5 @@
 package file_io;
 import java.io.*;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.lang.NullPointerException;
 public class UserList

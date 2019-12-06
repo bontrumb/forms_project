@@ -42,7 +42,7 @@ public class UserData_Calc
 		DC = new Display_Caloric(z);
 		BM = new Basal_Metabolic(z);
 		FFMI = new FFMI(z);
-		VO2_Max = new VO2_Max(z);
+		//VO2_Max = new VO2_Max(z);
 		BMI = new BMI(z);
 		//LS = new Lifting_Stats(z);
 		BC = new Barbell_Curl(z);

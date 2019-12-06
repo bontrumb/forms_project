@@ -1,7 +1,9 @@
 package file_io;
 import java.io.*;
 import java.util.Scanner;
+import java.util.ArrayList;
 import data.*;
+import structs.Struct;
 public class UserData_File
 {
 	public static boolean SetData(String ToAccess, UserData toTransfer) {
@@ -14,32 +16,41 @@ public class UserData_File
 			return false;
 		}
 		UserData_Tools toUse = new UserData_Tools(toTransfer);
-		boolean a, b, c, d;
-		a = toUse.Set("Info", inputStream.nextLine());
-		b = toUse.Set("Gender", inputStream.nextLine());
-		c = toUse.Set("Weight", inputStream.nextLine());
-		d = toUse.Set("Height", inputStream.nextLine());
+		boolean a = true;
+		String Type = "";
+		Object ToAdd = null;
+		while (inputStream.hasNext()) {
+			Type = inputStream.nextLine();
+			ToAdd = inputStream.nextLine();
+			a &= toUse.Set(Type, ToAdd);
+		}
 		inputStream.close();
-		return a && b && c && d;
+		return a;
 	}
 	public static boolean SaveData(UserData toTransfer) {
 		UserData_Tools toUse = new UserData_Tools(toTransfer);
-		if (toUse.Get("Info") == null) {
-			return false;
+		String temp = "temp";
+		if (toUse.Get("Info") != null) {
+			temp = toUse.Get("Info").toString();
 		}
-		String FileName = "users/" + ((String) toUse.Get("Info")) + ".txt";
+		String FileName = "users/" + temp + ".txt";
 		PrintWriter output = null;
 		try {
 			output = new PrintWriter(FileName);
 		} catch (Exception e) {
-			//System.out.println("Cannot write to file...");
+			System.out.println("Cannot write to file...");
 			return false;
 		}
-		output.println((String) toUse.Get("Info"));
-		output.println((String) toUse.Get("Gender"));
-		//output.println("");
-		output.println((double) toUse.Get("Weight"));
-		output.println((double) toUse.Get("Height"));
+		Object ToGet = new Object();
+		String Type = "";
+		for (Struct o : toUse.GetData()) {
+			Type = o.GetType();
+			if (toUse.Get(Type) != null) {
+				ToGet = toUse.Get(Type);
+				output.println(Type);
+				output.println(ToGet);
+			}
+		}
 		output.close();
 		System.out.println("Successfully wrote to " + FileName);
 		return true;
