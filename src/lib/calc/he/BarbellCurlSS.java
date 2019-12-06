@@ -29,10 +29,10 @@ public class BarbellCurlSS extends StrengthStandard
 
 	public void maleBBCStandard() // https://strengthlevel.com/strength-standards/barbell-curl
 	{
-		int temp_bodyweight = bodyweight_lbs;
-		temp_bodyweight = ((temp_bodyweight + 5) / 10) * 10; // round to nearest ten
+		int weight = bodyweight_lbs;
+		weight = ((weight + 5) / 10) * 10; // round to nearest ten
 
-		switch(temp_bodyweight)
+		switch(weight)
 		{
 			case 110:
 
@@ -414,10 +414,10 @@ public class BarbellCurlSS extends StrengthStandard
 
 	public void femaleBBCStandard()
 	{
-		int temp_bodyweight = bodyweight_lbs;
-		temp_bodyweight = ((temp_bodyweight + 5) / 10) * 10; // round to nearest ten
+		int weight = bodyweight_lbs;
+		weight = ((weight + 5) / 10) * 10; // round to nearest ten
 
-		switch(temp_bodyweight)
+		switch(weight)
 		{
 			case 90:
 

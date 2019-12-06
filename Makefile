@@ -41,7 +41,7 @@ export JCOMP JTEST T_LIB S_TESTS S_LIB LG_DIRS
 
 .PHONY  : all clean test GEN_DIR $(L_DIRS)
 
-all     : GEN_DIR gui
+all     : GEN_DIR menu
 
 GEN_DIR :
 	$(call EXISTDIR,bin);

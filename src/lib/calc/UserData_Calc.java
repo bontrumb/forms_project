@@ -40,7 +40,7 @@ public class UserData_Calc
 		FFMI = new FFMI(z);
 		VO2_Max = new VO2_Max(z);
 		BMI = new BMI(z);
-		LS = new Lifting_Stats(z);
+		//LS = new Lifting_Stats(z);
 		//
 		Init_Data();
 	}
@@ -72,9 +72,11 @@ public class UserData_Calc
 	}
 	/**Returns Lifting_Stats values.
 	 */
+	/*
 	public Object GetLS() {
 		return LS.Result();
 	}
+	*/
 	/**Initializes the calculation values into #ArrayCalc.
 	 */
 	private void Init_Data() {

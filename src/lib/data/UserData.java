@@ -94,6 +94,8 @@ public class UserData
 	public void SetEntry(int choice) {
 		Struct s = GetData_Var(choice);
 		while (true) {
+			System.out.println("Enter a value for " + s.GetType() + 
+				" (" + s.GetUnits() + ")");
 			Scanner scan = new Scanner(System.in);
 			String input = scan.next();
 			if (s.SE(input)) {
