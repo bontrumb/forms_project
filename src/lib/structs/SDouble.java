@@ -47,7 +47,7 @@ public abstract class SDouble extends Struct
 		try {
 			this.heap = Double.parseDouble((String) o);
 			return true;
-		} catch (NumberFormatException e) {
+		} catch (Exception e) {
 			return false;
 		}
 	}

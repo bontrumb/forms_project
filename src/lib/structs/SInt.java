@@ -49,7 +49,7 @@ public abstract class SInt extends Struct
 		try {
 			this.heap = Integer.parseInt((String) o);
 			return true;
-		} catch (NumberFormatException e) {
+		} catch (Exception e) {
 			return false;
 		}
 	}

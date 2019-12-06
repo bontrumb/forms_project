@@ -8,9 +8,11 @@ BASE_DIR:=$(shell pwd)
 L_DIRS:= structs menu data calc gui user driver handlers file_io
 T_DIRS:=bin docs lib
 SRC:=$(BASE_DIR)/src
+T_TEST:=$(T_LIB)/tests
+S_TEST:=$(S_LIB)/tests
 T_LIB:=$(BASE_DIR)/lib
 T_BIN:=$(BASE_DIR)/bin
-LG_DIRS:=$(foreach d,$(L_DIRS),$(T_LIB)/$(d))
+LG_DIRS:=$(foreach d,$(L_DIRS),$(T_LIB)/$(d)) $(T_TEST)
 T_DOCS:=$(BASE_DIR)/docs
 S_LIB:=$(SRC)/lib
 S_JUNIT:=$(SRC)/junit/junit-4.13-rc-1.jar
@@ -37,17 +39,19 @@ define RMDIR
 fi
 endef
 
-export JCOMP JTEST T_LIB S_TESTS S_LIB LG_DIRS
+export JCOMP JTEST L_DIRS T_LIB S_TEST T_TEST S_LIB LG_DIRS
 
 .PHONY  : all clean test GEN_DIR $(L_DIRS)
 
-all     : GEN_DIR menu 
+all     : GEN_DIR gui
 
 GEN_DIR :
 	$(call EXISTDIR,bin);
 	$(call EXISTDIR,docs);
 	$(call EXISTDIR,lib);
 gui	: menu
+tests	: menu
+	@$(MAKE) -C $(S_TESTS) $@
 menu	: file_io
 file_io : calc
 calc	: data

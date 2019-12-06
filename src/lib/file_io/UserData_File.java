@@ -6,11 +6,14 @@ import data.*;
 import structs.Struct;
 public class UserData_File
 {
+	private static String pathname = "users";
+	private static File path = new File(pathname);
 	public static boolean SetData(String ToAccess, UserData toTransfer) {
 		Scanner inputStream = null;
+		String TruePath = pathname + "/" + ToAccess;
 		try {
 			inputStream = new Scanner(new FileInputStream(
-						"users/" + ToAccess));
+						TruePath));
 		} catch (FileNotFoundException e) {
 			System.out.println("Cannot open file. Looks like it does not exist.");
 			return false;
@@ -33,7 +36,10 @@ public class UserData_File
 		if (toUse.Get("Info") != null) {
 			temp = toUse.Get("Info").toString();
 		}
-		String FileName = "users/" + temp + ".txt";
+		if (!path.exists()) {
+			path.mkdir();
+		}
+		String FileName = pathname + "/" + temp + ".txt";
 		PrintWriter output = null;
 		try {
 			output = new PrintWriter(FileName);
